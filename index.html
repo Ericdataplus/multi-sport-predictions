@@ -601,15 +601,16 @@
     <header class="header">
         <h1>🏆 Multi-Sport Predictions</h1>
         <div class="header-stats">
-            <div class="stat-item">
+            <div class="stat-item" title="How often our AI picks the winner correctly (across all sports)">
                 <div class="stat-value" id="accuracy">--</div>
                 <div class="stat-label">Accuracy</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-item" title="Return on Investment - How much profit you'd make betting $100 on each pick">
                 <div class="stat-value" id="roi">--</div>
                 <div class="stat-label">ROI</div>
             </div>
-            <div class="stat-item">
+            <div class="stat-item"
+                title="Number of AI models trained - each sport/bet-type has its own specialized model">
                 <div class="stat-value" id="models-count">14</div>
                 <div class="stat-label">Models</div>
             </div>
@@ -649,11 +650,19 @@
                     <h3 class="section-title">🎯 Best Picks</h3>
                 </div>
                 <div class="picks-tabs">
-                    <button class="picks-tab active" data-type="moneyline">Moneyline</button>
-                    <button class="picks-tab" data-type="spread">Spread</button>
-                    <button class="picks-tab" data-type="total">O/U</button>
-                    <button class="picks-tab" data-type="contracts">📈 Contracts</button>
-                    <button class="picks-tab" data-type="history">📜 History</button>
+                    <button class="picks-tab active" data-type="moneyline"
+                        title="Pick the winner - simplest bet type">Moneyline</button>
+                    <button class="picks-tab" data-type="spread"
+                        title="Predict if a team wins by enough points (or loses by less)">Spread</button>
+                    <button class="picks-tab" data-type="total"
+                        title="Predict if combined score goes Over or Under a number">O/U</button>
+                    <button class="picks-tab" data-type="contracts"
+                        title="Trade prediction contracts like stocks - advanced">📈 Contracts</button>
+                    <button class="picks-tab" data-type="history" title="View past predictions and their results">📜
+                        History</button>
+                </div>
+                <div id="bet-type-explainer"
+                    style="font-size:0.7rem;color:var(--text-secondary);padding:0.5rem 0;border-bottom:1px dashed var(--border-color);margin-bottom:0.5rem">
                 </div>
                 <div class="picks-list" id="picks-list"></div>
             </div>
@@ -692,7 +701,13 @@
             <!-- Parlays -->
             <div class="section">
                 <div class="section-header">
-                    <h3 class="section-title">🎰 Parlay Builder</h3>
+                    <h3 class="section-title" title="Parlays combine multiple picks - all must win for bigger payouts">
+                        🎰 Parlay Builder</h3>
+                </div>
+                <div
+                    style="font-size:0.65rem;color:var(--text-secondary);padding:0.25rem 0 0.5rem;border-bottom:1px dashed var(--border-color);margin-bottom:0.5rem">
+                    💡 <strong>Parlay</strong> = Combine picks for bigger payouts. ALL picks must win. Higher risk,
+                    higher reward!
                 </div>
                 <div id="parlays-container"></div>
             </div>
@@ -1207,14 +1222,33 @@
         });
 
         // Picks tabs
+        const betExplainers = {
+            moneyline: "💡 <strong>Moneyline</strong> = Pick who wins the game. Simplest bet! Find our pick below, then open your sportsbook app (DraftKings, FanDuel, etc.) and bet the team shown.",
+            spread: "💡 <strong>Spread</strong> = Pick if a team wins by enough points. Example: \"Lakers -5\" means Lakers must win by 6+ points. Good for when one team is the clear favorite.",
+            total: "💡 <strong>Over/Under</strong> = Predict if total combined score goes OVER or UNDER a number. Don't care who wins, just how many points total!",
+            contracts: "💡 <strong>Contracts</strong> = Trade on Polymarket, Kalshi, or PredictIt. Buy YES if you think it happens, NO if not. Prices = probability (60¢ = 60% chance).",
+            history: "📜 Your tracked predictions and their results. Export to CSV to analyze your performance!"
+        };
+
+        function updateExplainer() {
+            const explainer = document.getElementById('bet-type-explainer');
+            if (explainer) {
+                explainer.innerHTML = betExplainers[currentPickType] || '';
+            }
+        }
+
         document.querySelectorAll('.picks-tab').forEach(tab => {
             tab.addEventListener('click', () => {
                 document.querySelectorAll('.picks-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 currentPickType = tab.dataset.type;
+                updateExplainer();
                 updatePicks();
             });
         });
+
+        // Set initial explainer
+        updateExplainer();
 
         async function loadGames() {
             const container = document.getElementById('games-container');
