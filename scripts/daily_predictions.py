@@ -28,6 +28,7 @@ SPORTS_CONFIG = {
     'nhl': {'endpoint': '/hockey/nhl/scoreboard', 'model': 'v6_nhl_complete.pkl'},
     'mlb': {'endpoint': '/baseball/mlb/scoreboard', 'model': 'v6_mlb_complete.pkl'},
     'soccer': {'endpoint': '/soccer/eng.1/scoreboard', 'model': 'v6_soccer_complete.pkl'},
+    'tennis': {'endpoint': '/tennis/atp/scoreboard', 'model': 'v6_tennis_complete.pkl'},
 }
 
 
@@ -355,7 +356,7 @@ def print_accuracy_report():
     print("\n📊 MODEL VS ACTUAL:")
     print("-" * 45)
     model_expected = {
-        'nba': 0.654, 'nfl': 0.651, 'nhl': 0.512, 'mlb': 0.532, 'soccer': 0.643
+        'nba': 0.654, 'nfl': 0.651, 'nhl': 0.512, 'mlb': 0.532, 'soccer': 0.643, 'tennis': 0.628
     }
     for sport, expected in model_expected.items():
         sport_df = resolved[resolved['sport'] == sport]
