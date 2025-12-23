@@ -1495,27 +1495,27 @@
                         <!-- Live Stats with Clear Team Labels -->
                         ${(isLive || isFinal) && homeStats.length > 0 ? `
                         <div style="margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);font-size:0.65rem">
-                            <div style="display:grid;grid-template-columns:60px 1fr 1fr;gap:0.25rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
+                            <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
                                 <span style="color:var(--accent-yellow);font-weight:600">📊 Stats</span>
-                                <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.7rem">${away.team?.abbreviation || 'AWAY'}</span>
-                                <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.7rem">${home.team?.abbreviation || 'HOME'}</span>
+                                <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.75rem">${away.team?.abbreviation || 'AWAY'}</span>
+                                <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.75rem">${home.team?.abbreviation || 'HOME'}</span>
                             </div>
-                            <div style="display:grid;grid-template-columns:1fr 60px 60px;gap:0.3rem">
+                            <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;row-gap:0.4rem">
                                 <span style="color:var(--text-secondary)">FG% 🎯 (Field Goal %)</span>
-                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
-                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
                                 
                                 <span style="color:var(--text-secondary)">3P% 🏀 (3-Point %)</span>
-                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
-                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
                                 
                                 <span style="color:var(--text-secondary)">REB 🪨 (Rebounds)</span>
-                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'rebounds') || '-'}</span>
-                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'rebounds') || '-'}</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(awayStats, 'rebounds') || '-'}</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(homeStats, 'rebounds') || '-'}</span>
                                 
                                 <span style="color:var(--text-secondary)">AST 🤝 (Assists)</span>
-                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'assists') || '-'}</span>
-                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'assists') || '-'}</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(awayStats, 'assists') || '-'}</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${getStatValue(homeStats, 'assists') || '-'}</span>
                             </div>
                         </div>
                         ` : ''}
