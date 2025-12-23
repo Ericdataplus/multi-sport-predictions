@@ -105,13 +105,16 @@ def generate_prediction(game, sport, bet_type='moneyline'):
     Uses seeded random + model accuracy to simulate V6 predictions.
     In production, this would load the actual model and run inference.
     """
-    # Load model accuracy as baseline
+    # Load model accuracy - OPTIMIZED per sport + bet type (Dec 2025)
+    # Uses V6 for moneyline/spread, Specialized for totals
+    # NHL moneyline uses specialized (72% vs 51%)
     model_accuracy = {
-        'nba': {'moneyline': 0.654, 'spread': 0.734, 'total': 0.55},
-        'nfl': {'moneyline': 0.651, 'spread': 0.652, 'total': 0.53},
-        'nhl': {'moneyline': 0.512, 'spread': 0.591, 'total': 0.56},
-        'mlb': {'moneyline': 0.532, 'spread': 0.556, 'total': 0.53},
-        'soccer': {'moneyline': 0.643, 'spread': 0.753, 'total': 0.55},
+        'nba': {'moneyline': 0.654, 'spread': 0.734, 'total': 0.622},      # Total: Specialized +7%
+        'nfl': {'moneyline': 0.651, 'spread': 0.652, 'total': 0.563},      # Total: Specialized +3%
+        'nhl': {'moneyline': 0.720, 'spread': 0.591, 'total': 0.601},      # ML: Specialized +21%, Total: +4%
+        'mlb': {'moneyline': 0.534, 'spread': 0.556, 'total': 0.584},      # ML/Total: Specialized
+        'soccer': {'moneyline': 0.643, 'spread': 0.753, 'total': 0.615},   # Total: Specialized +7%
+        'tennis': {'moneyline': 0.628},
     }
     
     base_acc = model_accuracy.get(sport, {}).get(bet_type, 0.55)
@@ -352,11 +355,11 @@ def print_accuracy_report():
     rt = rw + rl
     print(f"  Record: {rw}W - {rl}L ({(rw/rt*100):.1f}%)" if rt > 0 else "  No resolved picks")
     
-    # Compare to model expectations
+    # Compare to model expectations (optimized per sport)
     print("\n📊 MODEL VS ACTUAL:")
     print("-" * 45)
     model_expected = {
-        'nba': 0.654, 'nfl': 0.651, 'nhl': 0.512, 'mlb': 0.532, 'soccer': 0.643, 'tennis': 0.628
+        'nba': 0.654, 'nfl': 0.651, 'nhl': 0.720, 'mlb': 0.534, 'soccer': 0.643, 'tennis': 0.628
     }
     for sport, expected in model_expected.items():
         sport_df = resolved[resolved['sport'] == sport]
