@@ -1500,20 +1500,20 @@
                                 <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.7rem">${away.team?.abbreviation || 'AWAY'}</span>
                                 <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.7rem">${home.team?.abbreviation || 'HOME'}</span>
                             </div>
-                            <div style="display:grid;grid-template-columns:60px 1fr 1fr;gap:0.3rem">
-                                <span style="color:var(--text-secondary)" title="Field Goal % - Shot accuracy from anywhere">FG% 🎯</span>
+                            <div style="display:grid;grid-template-columns:1fr 60px 60px;gap:0.3rem">
+                                <span style="color:var(--text-secondary)">FG% 🎯 (Field Goal %)</span>
                                 <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
                                 <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
                                 
-                                <span style="color:var(--text-secondary)" title="3-Point % - Long-range shot accuracy">3P% 🏀</span>
+                                <span style="color:var(--text-secondary)">3P% 🏀 (3-Point %)</span>
                                 <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
                                 <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
                                 
-                                <span style="color:var(--text-secondary)" title="Rebounds - Grabbed after missed shots">REB 🪨</span>
+                                <span style="color:var(--text-secondary)">REB 🪨 (Rebounds)</span>
                                 <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'rebounds') || '-'}</span>
                                 <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'rebounds') || '-'}</span>
                                 
-                                <span style="color:var(--text-secondary)" title="Assists - Passes that lead to scores">AST 🤝</span>
+                                <span style="color:var(--text-secondary)">AST 🤝 (Assists)</span>
                                 <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'assists') || '-'}</span>
                                 <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'assists') || '-'}</span>
                             </div>
