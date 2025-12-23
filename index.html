@@ -1714,32 +1714,38 @@
                     const marketSeed = seededRandom(`${currentSport}_market_${idx}`);
                     const marketPrice = Math.max(0.35, modelPrice - (0.05 + marketSeed * 0.15));
                     const edge = modelPrice - marketPrice;
+                    const edgePercent = (edge * 100).toFixed(0);
                     const action = edge > 0.05 ? 'BUY YES' : (edge < -0.05 ? 'BUY NO' : 'HOLD');
                     const actionColor = action === 'BUY YES' ? 'var(--accent-green)' : (action === 'BUY NO' ? 'var(--accent-red)' : 'var(--text-secondary)');
                     const profit = ((1 - marketPrice) / marketPrice * 100).toFixed(0);
+                    const hasEdge = edge >= 0.05;
 
                     return `
-                    <div class="pick-card" style="border-left:3px solid ${actionColor}">
+                    <div class="pick-card" style="border-left:3px solid ${actionColor};${hasEdge ? 'background:linear-gradient(90deg, rgba(16, 185, 129, 0.1), var(--bg-card));' : ''}">
                         <div class="pick-info">
-                            <div class="pick-team">${pick.team} wins</div>
+                            <div class="pick-team" style="display:flex;align-items:center;gap:0.5rem">
+                                ${pick.team} wins
+                                ${hasEdge ? `<span style="background:linear-gradient(135deg, #f59e0b, #ef4444);color:white;font-size:0.6rem;padding:0.15rem 0.4rem;border-radius:10px;font-weight:700;animation:pulse 2s infinite">🔥 +${edgePercent}% EDGE</span>` : ''}
+                            </div>
                             <div style="display:flex;gap:0.5rem;font-size:0.7rem;color:var(--text-secondary);margin-top:0.25rem">
-                                <span>Model: <strong style="color:var(--accent-primary)">$${modelPrice.toFixed(2)}</strong></span>
-                                <span>Market: <strong>$${marketPrice.toFixed(2)}</strong></span>
+                                <span>AI: <strong style="color:var(--accent-primary)">${(modelPrice * 100).toFixed(0)}%</strong></span>
+                                <span>Market: <strong>${(marketPrice * 100).toFixed(0)}%</strong></span>
+                                ${hasEdge ? `<span style="color:var(--accent-green);font-weight:600">← Our model beats market!</span>` : ''}
                             </div>
                         </div>
                         <div class="pick-confidence">
                             <div style="font-size:0.85rem;font-weight:700;color:${actionColor}">${action}</div>
                             <div style="font-size:0.65rem;color:var(--text-secondary)">
-                                ${action === 'BUY YES' ? `+${profit}% profit` : edge > 0 ? `+${(edge * 100).toFixed(0)}¢ edge` : 'No edge'}
+                                ${action === 'BUY YES' ? `+${profit}% profit` : edge > 0 ? `+${edgePercent}¢ edge` : 'No edge'}
                             </div>
                         </div>
                     </div>
                     <div style="font-size:0.65rem;color:var(--text-secondary);padding:0.5rem;background:var(--bg-card);border-radius:0 0 8px 8px;margin-top:-0.5rem;margin-bottom:0.75rem">
-                        <strong>How to bet:</strong> ${action === 'BUY YES'
-                            ? `Buy YES contract at $${marketPrice.toFixed(2)}. If ${pick.team} wins, you get $1.00 (+${profit}% profit).`
+                        ${hasEdge
+                            ? `<strong style="color:var(--accent-green)">💰 VALUE BET:</strong> Buy $30 worth. If ${pick.team} wins → $${(30 / marketPrice).toFixed(0)} payout (+$${((30 / marketPrice) - 30).toFixed(0)} profit!)`
                             : action === 'BUY NO'
-                                ? `Buy NO contract. The market overvalues this outcome.`
-                                : `Edge too small. Wait for better price.`
+                                ? `<strong>Strategy:</strong> Buy NO contract. The market overvalues this outcome.`
+                                : `<strong>Strategy:</strong> Edge too small. Wait for better price.`
                         }
                     </div>
                 `;
