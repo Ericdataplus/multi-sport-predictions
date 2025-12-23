@@ -894,15 +894,10 @@
             const homeStats = stats[home];
 
             // Update the placeholder with stats - matching NBA format
-            // Reset styles and add content
+            // Reset styles and add content (header is already in parent HTML)
             statsContainer.style.textAlign = 'left';
             statsContainer.style.fontStyle = 'normal';
             statsContainer.innerHTML = `
-        <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
-            <span style="color:var(--accent-yellow);font-weight:600">📊 Stats</span>
-            <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.75rem">${away}</span>
-            <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.75rem">${home}</span>
-        </div>
         <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;row-gap:0.4rem">
             <span style="color:var(--text-secondary)">🏈 Total Yds (Offense)</span>
             <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.totalYards || '-'}</span>
