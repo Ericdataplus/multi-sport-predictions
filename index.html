@@ -1355,16 +1355,16 @@
                                     <div class="team-logo">${away.team?.abbreviation?.substring(0, 3) || '??'}</div>
                                     <div>
                                         <div class="team-name">${away.team?.shortDisplayName || away.team?.displayName || 'Away'}</div>
-                                        <div class="team-record">${away.records?.[0]?.summary || ''}</div>
+                                        <div class="team-record" title="Season Record: Wins - Losses">${away.records?.[0]?.summary || ''}</div>
                                     </div>
                                 </div>
                                 <div style="display:flex;align-items:center;gap:0.5rem">
                                     ${awayLineScores.length > 0 ? `
-                                    <div style="display:flex;gap:0.25rem;font-size:0.65rem;color:var(--text-secondary)">
-                                        ${awayLineScores.map(ls => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px">${ls.value || 0}</span>`).join('')}
+                                    <div style="display:flex;gap:0.25rem;font-size:0.65rem;color:var(--text-secondary)" title="Quarter/Period Scores: Points scored in Q1, Q2, Q3, Q4">
+                                        ${awayLineScores.map((ls, i) => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px" title="Q${i + 1}: ${ls.value || 0} pts">${ls.value || 0}</span>`).join('')}
                                     </div>
                                     ` : ''}
-                                    <div class="team-score ${awayWins ? 'winner' : ''}">${isLive || isFinal ? awayScore : ''}</div>
+                                    <div class="team-score ${awayWins ? 'winner' : ''}" title="Final Score">${isLive || isFinal ? awayScore : ''}</div>
                                 </div>
                             </div>
                             <div class="team-row">
@@ -1372,42 +1372,51 @@
                                     <div class="team-logo">${home.team?.abbreviation?.substring(0, 3) || '??'}</div>
                                     <div>
                                         <div class="team-name">${home.team?.shortDisplayName || home.team?.displayName || 'Home'}</div>
-                                        <div class="team-record">${home.records?.[0]?.summary || ''}</div>
+                                        <div class="team-record" title="Season Record: Wins - Losses">${home.records?.[0]?.summary || ''}</div>
                                     </div>
                                 </div>
                                 <div style="display:flex;align-items:center;gap:0.5rem">
                                     ${homeLineScores.length > 0 ? `
-                                    <div style="display:flex;gap:0.25rem;font-size:0.65rem;color:var(--text-secondary)">
-                                        ${homeLineScores.map(ls => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px">${ls.value || 0}</span>`).join('')}
+                                    <div style="display:flex;gap:0.25rem;font-size:0.65rem;color:var(--text-secondary)" title="Quarter/Period Scores: Points scored in Q1, Q2, Q3, Q4">
+                                        ${homeLineScores.map((ls, i) => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px" title="Q${i + 1}: ${ls.value || 0} pts">${ls.value || 0}</span>`).join('')}
                                     </div>
                                     ` : ''}
-                                    <div class="team-score ${homeWins ? 'winner' : ''}">${isLive || isFinal ? homeScore : ''}</div>
+                                    <div class="team-score ${homeWins ? 'winner' : ''}" title="Final Score">${isLive || isFinal ? homeScore : ''}</div>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Live Stats -->
+                        <!-- Live Stats with Explanations -->
                         ${(isLive || isFinal) && homeStats.length > 0 ? `
-                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);font-size:0.65rem">
-                            <div style="display:flex;justify-content:space-between;color:var(--text-secondary)">
-                                <span>FG%</span>
-                                <span>${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
-                                <span>${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
+                        <div style="margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);font-size:0.65rem">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:0.4rem">
+                                <span style="color:var(--accent-yellow);font-weight:600" title="Game statistics breakdown">📊 Game Stats</span>
+                                <div style="display:flex;gap:1.5rem">
+                                    <span style="color:var(--text-secondary);font-size:0.6rem">${away.team?.abbreviation || 'AWAY'}</span>
+                                    <span style="color:var(--text-secondary);font-size:0.6rem">${home.team?.abbreviation || 'HOME'}</span>
+                                </div>
                             </div>
-                            <div style="display:flex;justify-content:space-between;color:var(--text-secondary)">
-                                <span>3P%</span>
-                                <span>${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
-                                <span>${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
-                            </div>
-                            <div style="display:flex;justify-content:space-between;color:var(--text-secondary)">
-                                <span>REB</span>
-                                <span>${getStatValue(awayStats, 'rebounds') || '-'}</span>
-                                <span>${getStatValue(homeStats, 'rebounds') || '-'}</span>
-                            </div>
-                            <div style="display:flex;justify-content:space-between;color:var(--text-secondary)">
-                                <span>AST</span>
-                                <span>${getStatValue(awayStats, 'assists') || '-'}</span>
-                                <span>${getStatValue(homeStats, 'assists') || '-'}</span>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem">
+                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Field Goal % - How often shots go in the basket">
+                                    <span>FG% <span style="opacity:0.5">🎯</span></span>
+                                    <span>${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
+                                    <span>${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="3-Point % - Success rate on long-distance shots">
+                                    <span>3P% <span style="opacity:0.5">🏀</span></span>
+                                    <span>${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                    <span>${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Rebounds - Catching the ball after a missed shot">
+                                    <span>REB <span style="opacity:0.5">🪨</span></span>
+                                    <span>${getStatValue(awayStats, 'rebounds') || '-'}</span>
+                                    <span>${getStatValue(homeStats, 'rebounds') || '-'}</span>
+                                </div>
+                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Assists - Passing to a teammate who then scores">
+                                    <span>AST <span style="opacity:0.5">🤝</span></span>
+                                    <span>${getStatValue(awayStats, 'assists') || '-'}</span>
+                                    <span>${getStatValue(homeStats, 'assists') || '-'}</span>
+                                </div>
                             </div>
                         </div>
                         ` : ''}
@@ -1424,11 +1433,21 @@
                         <div class="game-prediction" style="cursor:pointer;transition:all 0.2s" 
                             onclick="trackGamePrediction('${gameId}', '${currentSport}', 'moneyline', '${predTeam}', ${predConfidence})"
                             title="Click to track this prediction">
-                            <span>🎯 Pick: <strong>${predTeam}</strong></span>
+                            <span>🎯 AI Pick: <strong>${predTeam}</strong></span>
                             <span class="prediction-badge">${(predConfidence * 100).toFixed(0)}%</span>
                             <span style="font-size:0.6rem;opacity:0.6;margin-left:0.5rem">📌</span>
                         </div>
-                        ` : ''}
+                        ` : `
+                        <div class="game-prediction" style="background:${prediction.pickHome === homeWins ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)'};border-radius:8px;padding:0.5rem">
+                            <span>
+                                ${prediction.pickHome === homeWins ? '✅' : '❌'} 
+                                AI picked <strong>${predTeam}</strong> (${(predConfidence * 100).toFixed(0)}%)
+                            </span>
+                            <span style="font-weight:700;color:${prediction.pickHome === homeWins ? 'var(--accent-green)' : 'var(--accent-red)'}">
+                                ${prediction.pickHome === homeWins ? 'WON' : 'LOST'}
+                            </span>
+                        </div>
+                        `}
                     </div>
                 `;
             }).join('');
