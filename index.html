@@ -1492,37 +1492,30 @@
                             </div>
                         </div>
                         
-                        <!-- Live Stats with Explanations -->
+                        <!-- Live Stats with Clear Team Labels -->
                         ${(isLive || isFinal) && homeStats.length > 0 ? `
                         <div style="margin-top:0.5rem;padding-top:0.5rem;border-top:1px solid var(--border-color);font-size:0.65rem">
-                            <div style="display:flex;justify-content:space-between;margin-bottom:0.4rem">
-                                <span style="color:var(--accent-yellow);font-weight:600" title="Game statistics breakdown">📊 Game Stats</span>
-                                <div style="display:flex;gap:1.5rem">
-                                    <span style="color:var(--text-secondary);font-size:0.6rem">${away.team?.abbreviation || 'AWAY'}</span>
-                                    <span style="color:var(--text-secondary);font-size:0.6rem">${home.team?.abbreviation || 'HOME'}</span>
-                                </div>
+                            <div style="display:grid;grid-template-columns:60px 1fr 1fr;gap:0.25rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
+                                <span style="color:var(--accent-yellow);font-weight:600">📊 Stats</span>
+                                <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.7rem">${away.team?.abbreviation || 'AWAY'}</span>
+                                <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.7rem">${home.team?.abbreviation || 'HOME'}</span>
                             </div>
-                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem">
-                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Field Goal % - How often shots go in the basket">
-                                    <span>FG% <span style="opacity:0.5">🎯</span></span>
-                                    <span>${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
-                                    <span>${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
-                                </div>
-                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="3-Point % - Success rate on long-distance shots">
-                                    <span>3P% <span style="opacity:0.5">🏀</span></span>
-                                    <span>${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
-                                    <span>${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
-                                </div>
-                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Rebounds - Catching the ball after a missed shot">
-                                    <span>REB <span style="opacity:0.5">🪨</span></span>
-                                    <span>${getStatValue(awayStats, 'rebounds') || '-'}</span>
-                                    <span>${getStatValue(homeStats, 'rebounds') || '-'}</span>
-                                </div>
-                                <div style="display:flex;justify-content:space-between;color:var(--text-secondary)" title="Assists - Passing to a teammate who then scores">
-                                    <span>AST <span style="opacity:0.5">🤝</span></span>
-                                    <span>${getStatValue(awayStats, 'assists') || '-'}</span>
-                                    <span>${getStatValue(homeStats, 'assists') || '-'}</span>
-                                </div>
+                            <div style="display:grid;grid-template-columns:60px 1fr 1fr;gap:0.3rem">
+                                <span style="color:var(--text-secondary)" title="Field Goal % - Shot accuracy from anywhere">FG% 🎯</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'fieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'fieldGoalPct') || '-'}%</span>
+                                
+                                <span style="color:var(--text-secondary)" title="3-Point % - Long-range shot accuracy">3P% 🏀</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'threePointFieldGoalPct') || '-'}%</span>
+                                
+                                <span style="color:var(--text-secondary)" title="Rebounds - Grabbed after missed shots">REB 🪨</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'rebounds') || '-'}</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'rebounds') || '-'}</span>
+                                
+                                <span style="color:var(--text-secondary)" title="Assists - Passes that lead to scores">AST 🤝</span>
+                                <span style="text-align:center;background:rgba(239,68,68,0.1);padding:0.15rem;border-radius:3px">${getStatValue(awayStats, 'assists') || '-'}</span>
+                                <span style="text-align:center;background:rgba(16,185,129,0.1);padding:0.15rem;border-radius:3px">${getStatValue(homeStats, 'assists') || '-'}</span>
                             </div>
                         </div>
                         ` : ''}
