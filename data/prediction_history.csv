@@ -1,48 +1,54 @@
-date,sport,bet_type,pick,confidence,odds,game_id,result,actual_score,resolved_date
-2025-12-22,nba,moneyline,Lakers,0.68,-145,401584200,pending,,
-2025-12-22,nba,moneyline,Celtics,0.72,-180,401584201,pending,,
-2025-12-22,nfl,moneyline,Chiefs,0.75,-155,401550100,pending,,
-2025-12-21,nba,moneyline,Nuggets,0.71,-165,401584195,win,118-105,2025-12-21
-2025-12-21,nba,spread,Warriors -3.5,0.64,-110,401584196,win,112-106,2025-12-21
-2025-12-21,nba,total,Over 225.5,0.67,-110,401584197,win,228,2025-12-21
-2025-12-21,nfl,moneyline,Eagles,0.69,-140,401550095,win,27-20,2025-12-21
-2025-12-21,nfl,spread,Bills +3.5,0.62,-110,401550096,loss,21-28,2025-12-21
-2025-12-21,nba,parlay,2-Leg: Nuggets ML + Warriors -3.5,0.45,+264,parlay_401584195_401584196,win,2/2 hit,2025-12-21
-2025-12-20,nba,moneyline,Bucks,0.66,-135,401584190,win,115-108,2025-12-20
-2025-12-20,nba,moneyline,Heat,0.58,+125,401584191,loss,98-105,2025-12-20
-2025-12-20,nba,contracts,Suns YES,0.70,0.58,401584192,win,1.00,2025-12-20
-2025-12-20,nhl,moneyline,Bruins,0.63,-130,401678950,win,4-2,2025-12-20
-2025-12-20,soccer,moneyline,Arsenal,0.68,-145,401789100,win,2-1,2025-12-20
-2025-12-20,nba,parlay,3-Leg: Bucks ML + Bruins ML + Arsenal ML,0.28,+595,parlay_401584190_401678950_401789100,win,3/3 hit,2025-12-20
-2025-12-19,nba,moneyline,76ers,0.65,-155,401584185,loss,102-110,2025-12-19
-2025-12-19,nba,spread,Knicks +4.5,0.61,-110,401584186,push,105-110,2025-12-19
-2025-12-19,nba,total,Under 218.5,0.59,-110,401584187,win,212,2025-12-19
-2025-12-19,nfl,moneyline,Ravens,0.73,-175,401550090,win,31-17,2025-12-19
-2025-12-19,mlb,moneyline,Dodgers,0.70,-165,401456800,win,6-3,2025-12-19
-2025-12-19,nba,parlay,2-Leg: 76ers ML + Ravens ML,0.47,+264,parlay_401584185_401550090,loss,1/2 hit,2025-12-19
-2025-12-18,nba,moneyline,Mavericks,0.62,-125,401584180,win,122-115,2025-12-18
-2025-12-18,nba,moneyline,Timberwolves,0.69,-150,401584181,win,108-95,2025-12-18
-2025-12-18,nba,contracts,Clippers YES,0.55,0.48,401584182,loss,0.00,2025-12-18
-2025-12-18,nhl,moneyline,Rangers,0.61,-120,401678945,loss,2-3,2025-12-18
-2025-12-18,soccer,moneyline,Man City,0.74,-170,401789095,win,3-0,2025-12-18
-2025-12-18,nba,parlay,3-Leg: Mavericks ML + Wolves ML + Man City ML,0.32,+595,parlay_401584180_401584181_401789095,win,3/3 hit,2025-12-18
-2025-12-17,nba,moneyline,Cavaliers,0.76,-180,401584175,win,125-110,2025-12-17
-2025-12-17,nba,spread,Thunder -5.5,0.68,-110,401584176,win,118-108,2025-12-17
-2025-12-17,nba,total,Over 232.5,0.55,-110,401584177,loss,229,2025-12-17
-2025-12-17,nfl,spread,Packers -2.5,0.63,-110,401550085,win,24-21,2025-12-17
-2025-12-17,nba,parlay,2-Leg: Cavaliers ML + Thunder -5.5,0.52,+264,parlay_401584175_401584176,win,2/2 hit,2025-12-17
-2025-12-16,nba,moneyline,Rockets,0.59,+110,401584170,loss,99-105,2025-12-16
-2025-12-16,nba,moneyline,Kings,0.64,-135,401584171,win,114-108,2025-12-16
-2025-12-16,nhl,moneyline,Maple Leafs,0.66,-140,401678940,win,5-3,2025-12-16
-2025-12-16,soccer,moneyline,Liverpool,0.71,-155,401789090,win,2-0,2025-12-16
-2025-12-16,nba,parlay,3-Leg: Kings ML + Maple Leafs ML + Liverpool ML,0.30,+595,parlay_401584171_401678940_401789090,win,3/3 hit,2025-12-16
-2025-12-15,nba,contracts,Celtics YES,0.78,0.65,401584165,win,1.00,2025-12-15
-2025-12-15,nba,moneyline,Lakers,0.56,+120,401584166,win,112-108,2025-12-15
-2025-12-15,nba,spread,Grizzlies -2.5,0.60,-110,401584167,loss,98-102,2025-12-15
-2025-12-15,nfl,moneyline,Cowboys,0.58,+105,401550080,loss,17-24,2025-12-15
-2025-12-15,nba,parlay,2-Leg: Lakers ML + Celtics YES,0.44,+264,parlay_401584166_401584165,win,2/2 hit,2025-12-15
-2025-12-14,nba,moneyline,Nets,0.52,+145,401584160,loss,95-110,2025-12-14
-2025-12-14,nba,total,Under 221.5,0.63,-110,401584161,win,215,2025-12-14
-2025-12-14,mlb,moneyline,Yankees,0.67,-150,401456795,win,5-2,2025-12-14
-2025-12-14,nhl,moneyline,Oilers,0.69,-145,401678935,win,4-1,2025-12-14
-2025-12-14,nba,parlay,4-Leg: Under 221.5 + Yankees ML + Oilers ML + Nets ML,0.23,+1228,parlay_401584161_401456795_401678935_401584160,loss,3/4 hit,2025-12-14
+date,sport,bet_type,pick,confidence,odds,game_id,result,actual_score,resolved_date,model_version
+2025-12-22,nba,moneyline,Lakers,0.68,-145.0,401584200,pending,,,v6
+2025-12-22,nba,moneyline,Celtics,0.72,-180.0,401584201,pending,,,v6
+2025-12-22,nfl,moneyline,Chiefs,0.75,-155.0,401550100,pending,,,v6
+2025-12-21,nba,moneyline,Nuggets,0.71,-165.0,401584195,win,118-105,2025-12-21,v6
+2025-12-21,nba,spread,Warriors -3.5,0.64,-110.0,401584196,win,112-106,2025-12-21,v6
+2025-12-21,nba,total,Over 225.5,0.67,-110.0,401584197,win,228,2025-12-21,v6
+2025-12-21,nfl,moneyline,Eagles,0.69,-140.0,401550095,win,27-20,2025-12-21,v6
+2025-12-21,nfl,spread,Bills +3.5,0.62,-110.0,401550096,loss,21-28,2025-12-21,v6
+2025-12-21,nba,parlay,2-Leg: Nuggets ML + Warriors -3.5,0.45,264.0,parlay_401584195_401584196,win,2/2 hit,2025-12-21,v6
+2025-12-20,nba,moneyline,Bucks,0.66,-135.0,401584190,win,115-108,2025-12-20,v6
+2025-12-20,nba,moneyline,Heat,0.58,125.0,401584191,loss,98-105,2025-12-20,v6
+2025-12-20,nba,contracts,Suns YES,0.7,0.58,401584192,win,1.00,2025-12-20,v6
+2025-12-20,nhl,moneyline,Bruins,0.63,-130.0,401678950,win,4-2,2025-12-20,v6
+2025-12-20,soccer,moneyline,Arsenal,0.68,-145.0,401789100,win,2-1,2025-12-20,v6
+2025-12-20,nba,parlay,3-Leg: Bucks ML + Bruins ML + Arsenal ML,0.28,595.0,parlay_401584190_401678950_401789100,win,3/3 hit,2025-12-20,v6
+2025-12-19,nba,moneyline,76ers,0.65,-155.0,401584185,loss,102-110,2025-12-19,v6
+2025-12-19,nba,spread,Knicks +4.5,0.61,-110.0,401584186,push,105-110,2025-12-19,v6
+2025-12-19,nba,total,Under 218.5,0.59,-110.0,401584187,win,212,2025-12-19,v6
+2025-12-19,nfl,moneyline,Ravens,0.73,-175.0,401550090,win,31-17,2025-12-19,v6
+2025-12-19,mlb,moneyline,Dodgers,0.7,-165.0,401456800,win,6-3,2025-12-19,v6
+2025-12-19,nba,parlay,2-Leg: 76ers ML + Ravens ML,0.47,264.0,parlay_401584185_401550090,loss,1/2 hit,2025-12-19,v6
+2025-12-18,nba,moneyline,Mavericks,0.62,-125.0,401584180,win,122-115,2025-12-18,v6
+2025-12-18,nba,moneyline,Timberwolves,0.69,-150.0,401584181,win,108-95,2025-12-18,v6
+2025-12-18,nba,contracts,Clippers YES,0.55,0.48,401584182,loss,0.00,2025-12-18,v6
+2025-12-18,nhl,moneyline,Rangers,0.61,-120.0,401678945,loss,2-3,2025-12-18,v6
+2025-12-18,soccer,moneyline,Man City,0.74,-170.0,401789095,win,3-0,2025-12-18,v6
+2025-12-18,nba,parlay,3-Leg: Mavericks ML + Wolves ML + Man City ML,0.32,595.0,parlay_401584180_401584181_401789095,win,3/3 hit,2025-12-18,v6
+2025-12-17,nba,moneyline,Cavaliers,0.76,-180.0,401584175,win,125-110,2025-12-17,v6
+2025-12-17,nba,spread,Thunder -5.5,0.68,-110.0,401584176,win,118-108,2025-12-17,v6
+2025-12-17,nba,total,Over 232.5,0.55,-110.0,401584177,loss,229,2025-12-17,v6
+2025-12-17,nfl,spread,Packers -2.5,0.63,-110.0,401550085,win,24-21,2025-12-17,v6
+2025-12-17,nba,parlay,2-Leg: Cavaliers ML + Thunder -5.5,0.52,264.0,parlay_401584175_401584176,win,2/2 hit,2025-12-17,v6
+2025-12-16,nba,moneyline,Rockets,0.59,110.0,401584170,loss,99-105,2025-12-16,v6
+2025-12-16,nba,moneyline,Kings,0.64,-135.0,401584171,win,114-108,2025-12-16,v6
+2025-12-16,nhl,moneyline,Maple Leafs,0.66,-140.0,401678940,win,5-3,2025-12-16,v6
+2025-12-16,soccer,moneyline,Liverpool,0.71,-155.0,401789090,win,2-0,2025-12-16,v6
+2025-12-16,nba,parlay,3-Leg: Kings ML + Maple Leafs ML + Liverpool ML,0.3,595.0,parlay_401584171_401678940_401789090,win,3/3 hit,2025-12-16,v6
+2025-12-15,nba,contracts,Celtics YES,0.78,0.65,401584165,win,1.00,2025-12-15,v6
+2025-12-15,nba,moneyline,Lakers,0.56,120.0,401584166,win,112-108,2025-12-15,v6
+2025-12-15,nba,spread,Grizzlies -2.5,0.6,-110.0,401584167,loss,98-102,2025-12-15,v6
+2025-12-15,nfl,moneyline,Cowboys,0.58,105.0,401550080,loss,17-24,2025-12-15,v6
+2025-12-15,nba,parlay,2-Leg: Lakers ML + Celtics YES,0.44,264.0,parlay_401584166_401584165,win,2/2 hit,2025-12-15,v6
+2025-12-14,nba,moneyline,Nets,0.52,145.0,401584160,loss,95-110,2025-12-14,v6
+2025-12-14,nba,total,Under 221.5,0.63,-110.0,401584161,win,215,2025-12-14,v6
+2025-12-14,mlb,moneyline,Yankees,0.67,-150.0,401456795,win,5-2,2025-12-14,v6
+2025-12-14,nhl,moneyline,Oilers,0.69,-145.0,401678935,win,4-1,2025-12-14,v6
+2025-12-14,nba,parlay,4-Leg: Under 221.5 + Yankees ML + Oilers ML + Nets ML,0.23,1228.0,parlay_401584161_401456795_401678935_401584160,loss,3/4 hit,2025-12-14,v6
+2025-12-23,mlb,moneyline,Baltimore Orioles,0.51,-120,401832869,pending,,,v6
+2025-12-23,mlb,moneyline,Chicago White Sox,0.555,+134,401832870,pending,,,v6
+2025-12-23,mlb,moneyline,Arizona Diamondbacks,0.525,+112,401832871,pending,,,v6
+2025-12-23,mlb,moneyline,Seattle Mariners,0.581,-133,401832872,pending,,,v6
+2025-12-23,mlb,moneyline,Texas Rangers,0.51,-142,401832873,pending,,,v6
+2025-12-23,soccer,moneyline,Manchester United,0.63,-120,740769,pending,,,v6
