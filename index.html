@@ -308,6 +308,10 @@
             color: var(--accent-green);
         }
 
+        .team-score.loser {
+            color: var(--accent-red);
+        }
+
         .game-prediction {
             margin-top: 0.75rem;
             padding-top: 0.75rem;
@@ -890,6 +894,9 @@
             const homeStats = stats[home];
 
             // Update the placeholder with stats - matching NBA format
+            // Reset styles and add content
+            statsContainer.style.textAlign = 'left';
+            statsContainer.style.fontStyle = 'normal';
             statsContainer.innerHTML = `
         <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
             <span style="color:var(--accent-yellow);font-weight:600">📊 Stats</span>
@@ -1569,7 +1576,7 @@
                                         ${awayLineScores.map((ls, i) => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px" title="Q${i + 1}: ${ls.value || 0} pts">${ls.value || 0}</span>`).join('')}
                                     </div>
                                     ` : ''}
-                                    <div class="team-score ${awayWins ? 'winner' : ''}" title="Final Score">${isLive || isFinal ? awayScore : ''}</div>
+                                    <div class="team-score ${awayWins ? 'winner' : ''} ${isFinal && homeWins ? 'loser' : ''}" title="Final Score">${isLive || isFinal ? awayScore : ''}</div>
                                 </div>
                             </div>
                             <div class="team-row">
@@ -1586,7 +1593,7 @@
                                         ${homeLineScores.map((ls, i) => `<span style="background:var(--bg-card);padding:0.1rem 0.25rem;border-radius:3px" title="Q${i + 1}: ${ls.value || 0} pts">${ls.value || 0}</span>`).join('')}
                                     </div>
                                     ` : ''}
-                                    <div class="team-score ${homeWins ? 'winner' : ''}" title="Final Score">${isLive || isFinal ? homeScore : ''}</div>
+                                    <div class="team-score ${homeWins ? 'winner' : ''} ${isFinal && awayWins ? 'loser' : ''}" title="Final Score">${isLive || isFinal ? homeScore : ''}</div>
                                 </div>
                             </div>
                         </div>
