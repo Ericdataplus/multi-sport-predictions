@@ -1920,51 +1920,113 @@
                     const home = comp?.competitors?.find(c => c.homeAway === 'home');
                     const away = comp?.competitors?.find(c => c.homeAway === 'away');
 
-                    // Use consistent prediction from cache
-                    const gameId = e.id || `${home?.team?.id}_${away?.team?.id}`;
-                    const cached = predictionCache[gameId];
-                    const pick = cached ? cached.team : (home?.team?.abbreviation || '???');
-                    const conf = cached ? (cached.confidence * 100).toFixed(0) : '60';
+                    const status = e.status?.type?.name || '';
+                    const isFinal = status.includes('FINAL');
+                    const homeScore = parseInt(home?.score) || 0;
+                    const awayScore = parseInt(away?.score) || 0;
+                    const homeWon = homeScore > awayScore;
 
-                    return { team: pick, conf, gameId };
+                    // Use real prediction or cache
+                    const gameId = e.id || `${home?.team?.id}_${away?.team?.id}`;
+                    const realPred = getRealPrediction(gameId, currentSport);
+                    let pick, conf, pickHome;
+
+                    if (realPred && realPred.predictions) {
+                        const ml = realPred.predictions.moneyline;
+                        pick = ml.pick;
+                        conf = (ml.confidence * 100).toFixed(0);
+                        pickHome = ml.pick_home;
+                    } else if (realPred) {
+                        pick = realPred.pick;
+                        conf = (realPred.confidence * 100).toFixed(0);
+                        pickHome = realPred.pick_home;
+                    } else {
+                        const cached = predictionCache[gameId];
+                        pick = cached ? cached.team : (home?.team?.abbreviation || '???');
+                        conf = cached ? (cached.confidence * 100).toFixed(0) : '60';
+                        pickHome = cached ? cached.pickHome : true;
+                    }
+
+                    // Determine result for finished games
+                    let result = null;
+                    if (isFinal) {
+                        result = (pickHome === homeWon) ? 'hit' : 'miss';
+                    }
+
+                    return {
+                        team: pick, conf, gameId, isFinal, result, pickHome,
+                        homeTeam: home?.team?.abbreviation || '',
+                        awayTeam: away?.team?.abbreviation || '',
+                        homeScore, awayScore
+                    };
                 });
 
                 const combinedConf = picks.reduce((acc, p) => acc * (parseInt(p.conf) / 100), 1);
                 const parlayId = `parlay_${currentSport}_${parlay.legs}_${picks.map(p => p.gameId).join('_')}`;
                 const parlayPick = `${parlay.legs}-Leg: ${picks.map(p => p.team + ' ML').join(' + ')}`;
 
-                // Auto-track parlay to history
+                // Calculate parlay result
+                const finishedPicks = picks.filter(p => p.isFinal);
+                const hits = finishedPicks.filter(p => p.result === 'hit').length;
+                const misses = finishedPicks.filter(p => p.result === 'miss').length;
+                const allFinished = finishedPicks.length === picks.length;
+                const parlayHit = allFinished && misses === 0;
+                const parlayBusted = misses > 0;
+
                 addPrediction({
-                    gameId: parlayId,
-                    sport: currentSport,
-                    betType: 'parlay',
-                    pick: parlayPick,
-                    confidence: combinedConf,
-                    odds: parlay.odds,
+                    gameId: parlayId, sport: currentSport, betType: 'parlay',
+                    pick: parlayPick, confidence: combinedConf, odds: parlay.odds,
                     parlayLegs: picks.map(p => ({ gameId: p.gameId, team: p.team }))
                 });
 
-                return { parlay, picks, combinedConf, parlayId };
+                return { parlay, picks, combinedConf, parlayId, hits, misses, finishedCount: finishedPicks.length, parlayHit, parlayBusted };
             });
 
-            parlaysContainer.innerHTML = parlayData.map(({ parlay, picks, combinedConf }) => {
+            parlaysContainer.innerHTML = parlayData.map(({ parlay, picks, hits, misses, finishedCount, parlayHit, parlayBusted }) => {
+                let resultBadge = '';
+                if (finishedCount === picks.length && finishedCount > 0) {
+                    resultBadge = parlayHit
+                        ? `<div style="text-align:center;margin:0.3rem 0"><span style="background:var(--accent-green);color:white;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700">💰 PARLAY HIT!</span></div>`
+                        : `<div style="text-align:center;margin:0.3rem 0"><span style="background:var(--accent-red);color:white;padding:0.2rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700">❌ BUSTED</span></div>`;
+                } else if (finishedCount > 0) {
+                    resultBadge = `<div style="text-align:center;margin:0.3rem 0"><span style="background:var(--bg-tertiary);color:var(--text-secondary);padding:0.2rem 0.5rem;border-radius:4px;font-size:0.65rem">✓${hits} ✗${misses} of ${picks.length}</span></div>`;
+                }
+
+                const cardStyle = parlayHit ? 'border:2px solid var(--accent-green);background:rgba(16,185,129,0.05)'
+                    : parlayBusted ? 'border:2px solid var(--accent-red);background:rgba(239,68,68,0.05);opacity:0.8' : '';
+
                 return `
-                    <div class="parlay-card">
+                    <div class="parlay-card" style="${cardStyle}">
                         <div class="parlay-header">
                             <span class="parlay-legs">${parlay.legs}-Leg Parlay</span>
                             <span class="parlay-odds">${parlay.odds}</span>
                         </div>
+                        ${resultBadge}
                         <div class="parlay-picks">
-                            ${picks.map(p => `
-                                <div class="parlay-pick">
-                                    <span>${p.team}</span>
+                            ${picks.map(p => {
+                    let style = '', icon = '';
+                    if (p.isFinal) {
+                        if (p.result === 'hit') {
+                            style = 'background:rgba(16,185,129,0.15);border-left:3px solid var(--accent-green);padding-left:0.4rem';
+                            icon = '<span style="color:var(--accent-green);font-weight:700">✓</span>';
+                        } else {
+                            style = 'background:rgba(239,68,68,0.15);border-left:3px solid var(--accent-red);padding-left:0.4rem';
+                            icon = '<span style="color:var(--accent-red);font-weight:700">✗</span>';
+                        }
+                    }
+                    return `
+                                <div class="parlay-pick" style="${style};border-radius:4px;margin:0.15rem 0">
+                                    <span style="display:flex;align-items:center;gap:0.3rem">
+                                        ${icon}<span>${p.team}</span>
+                                        ${p.isFinal ? `<span style="font-size:0.55rem;color:var(--text-secondary)">(${p.awayTeam} ${p.awayScore}-${p.homeScore} ${p.homeTeam})</span>` : ''}
+                                    </span>
                                     <span>${p.conf}%</span>
-                                </div>
-                            `).join('')}
+                                </div>`;
+                }).join('')}
                         </div>
                         <div class="parlay-footer">
                             <span class="risk-badge risk-${parlay.risk}">${parlay.risk.toUpperCase()} RISK</span>
-                            <span class="parlay-payout">$100 → $${parlay.payout}</span>
+                            <span class="parlay-payout">${parlayBusted ? '❌ $0' : `$100 → $${parlay.payout}`}</span>
                         </div>
                     </div>
                 `;
