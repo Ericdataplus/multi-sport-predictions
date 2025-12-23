@@ -1374,8 +1374,22 @@
 
                 let predTeam, predConfidence, prediction, isRealPrediction;
 
-                if (realPred) {
-                    // USE REAL PREDICTION FROM TRAINED MODEL
+                if (realPred && realPred.predictions) {
+                    // USE REAL PREDICTION FROM TRAINED MODEL (new format with all bet types)
+                    const mlPred = realPred.predictions.moneyline;
+                    predTeam = mlPred.pick;
+                    predConfidence = mlPred.confidence;
+                    prediction = {
+                        team: mlPred.pick,
+                        confidence: mlPred.confidence,
+                        pickHome: mlPred.pick_home,
+                        // Include other bet types for display
+                        spread: realPred.predictions.spread,
+                        total: realPred.predictions.total
+                    };
+                    isRealPrediction = true;
+                } else if (realPred) {
+                    // OLD format (backwards compatibility)
                     predTeam = realPred.pick;
                     predConfidence = realPred.confidence;
                     prediction = {

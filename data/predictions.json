@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-23T05:11:36.163277",
+  "generated_at": "2025-12-23T05:19:01.126430",
   "model_version": "v6_behavioral",
   "predictions": {
     "nba": [
@@ -7,91 +7,231 @@
         "game_id": "401810257",
         "home_team": "Cleveland Cavaliers",
         "away_team": "Charlotte Hornets",
-        "pick": "Cleveland Cavaliers",
-        "pick_home": true,
-        "confidence": 0.738,
-        "odds": "-167",
+        "home_abbrev": "CLE",
+        "away_abbrev": "CHA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Cleveland Cavaliers",
+            "pick_home": true,
+            "confidence": 0.554,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "CLE -4.0",
+            "pick_home": true,
+            "confidence": 0.524,
+            "spread_line": "CLE -4.0",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.61,
+            "total_line": 215,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.476679",
+        "generated_at": "2025-12-23T05:18:59.556611",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810258",
         "home_team": "Boston Celtics",
         "away_team": "Indiana Pacers",
-        "pick": "Indiana Pacers",
-        "pick_home": false,
-        "confidence": 0.611,
-        "odds": "+77",
+        "home_abbrev": "BOS",
+        "away_abbrev": "IND",
+        "predictions": {
+          "moneyline": {
+            "pick": "Indiana Pacers",
+            "pick_home": false,
+            "confidence": 0.628,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "IND +5.4",
+            "pick_home": false,
+            "confidence": 0.559,
+            "spread_line": "BOS -5.4",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.577,
+            "total_line": 225,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.476679",
+        "generated_at": "2025-12-23T05:18:59.556611",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810259",
         "home_team": "New Orleans Pelicans",
         "away_team": "Dallas Mavericks",
-        "pick": "Dallas Mavericks",
-        "pick_home": false,
-        "confidence": 0.554,
-        "odds": "-130",
+        "home_abbrev": "NO",
+        "away_abbrev": "DAL",
+        "predictions": {
+          "moneyline": {
+            "pick": "New Orleans Pelicans",
+            "pick_home": true,
+            "confidence": 0.81,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "NO -7.7",
+            "pick_home": true,
+            "confidence": 0.662,
+            "spread_line": "NO -7.7",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.593,
+            "total_line": 220,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.477192",
+        "generated_at": "2025-12-23T05:18:59.556611",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810260",
         "home_team": "Denver Nuggets",
         "away_team": "Utah Jazz",
-        "pick": "Utah Jazz",
-        "pick_home": false,
-        "confidence": 0.575,
-        "odds": "-134",
+        "home_abbrev": "DEN",
+        "away_abbrev": "UTAH",
+        "predictions": {
+          "moneyline": {
+            "pick": "Denver Nuggets",
+            "pick_home": true,
+            "confidence": 0.688,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "DEN -3.3",
+            "pick_home": true,
+            "confidence": 0.589,
+            "spread_line": "DEN -3.3",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.573,
+            "total_line": 215,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.477192",
+        "generated_at": "2025-12-23T05:18:59.556611",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810261",
         "home_team": "Oklahoma City Thunder",
         "away_team": "Memphis Grizzlies",
-        "pick": "Memphis Grizzlies",
-        "pick_home": false,
-        "confidence": 0.555,
-        "odds": "-131",
+        "home_abbrev": "OKC",
+        "away_abbrev": "MEM",
+        "predictions": {
+          "moneyline": {
+            "pick": "Oklahoma City Thunder",
+            "pick_home": true,
+            "confidence": 0.638,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "OKC -5.2",
+            "pick_home": true,
+            "confidence": 0.563,
+            "spread_line": "OKC -5.2",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.636,
+            "total_line": 235,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.477192",
+        "generated_at": "2025-12-23T05:18:59.557617",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810262",
         "home_team": "Golden State Warriors",
         "away_team": "Orlando Magic",
-        "pick": "Golden State Warriors",
-        "pick_home": true,
-        "confidence": 0.612,
-        "odds": "-142",
+        "home_abbrev": "GS",
+        "away_abbrev": "ORL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Golden State Warriors",
+            "pick_home": true,
+            "confidence": 0.662,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "GS -5.5",
+            "pick_home": true,
+            "confidence": 0.575,
+            "spread_line": "GS -5.5",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 210",
+            "pick_over": true,
+            "confidence": 0.734,
+            "total_line": 210,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.477704",
+        "generated_at": "2025-12-23T05:18:59.557617",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401810263",
         "home_team": "Portland Trail Blazers",
         "away_team": "Detroit Pistons",
-        "pick": "Portland Trail Blazers",
-        "pick_home": true,
-        "confidence": 0.529,
-        "odds": "+94",
+        "home_abbrev": "POR",
+        "away_abbrev": "DET",
+        "predictions": {
+          "moneyline": {
+            "pick": "Portland Trail Blazers",
+            "pick_home": true,
+            "confidence": 0.575,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "POR -5.6",
+            "pick_home": true,
+            "confidence": 0.534,
+            "spread_line": "POR -5.6",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.673,
+            "total_line": 230,
+            "model_accuracy": 0.622
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:11:34.477704",
+        "generated_at": "2025-12-23T05:18:59.557617",
         "status": "STATUS_FINAL"
       }
     ],
@@ -100,208 +240,528 @@
         "game_id": "401772949",
         "home_team": "Seattle Seahawks",
         "away_team": "Los Angeles Rams",
-        "pick": "Seattle Seahawks",
-        "pick_home": true,
-        "confidence": 0.536,
-        "odds": "+92",
+        "home_abbrev": "SEA",
+        "away_abbrev": "LAR",
+        "predictions": {
+          "moneyline": {
+            "pick": "Seattle Seahawks",
+            "pick_home": true,
+            "confidence": 0.616,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "SEA -6.3",
+            "pick_home": true,
+            "confidence": 0.547,
+            "spread_line": "SEA -6.3",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 210",
+            "pick_over": true,
+            "confidence": 0.655,
+            "total_line": 210,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.868135",
+        "generated_at": "2025-12-23T05:18:59.887133",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772612",
         "home_team": "Washington Commanders",
         "away_team": "Philadelphia Eagles",
-        "pick": "Washington Commanders",
-        "pick_home": true,
-        "confidence": 0.598,
-        "odds": "+80",
+        "home_abbrev": "WSH",
+        "away_abbrev": "PHI",
+        "predictions": {
+          "moneyline": {
+            "pick": "Washington Commanders",
+            "pick_home": true,
+            "confidence": 0.55,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "WSH -2.9",
+            "pick_home": true,
+            "confidence": 0.52,
+            "spread_line": "WSH -2.9",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.63,
+            "total_line": 240,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.868135",
+        "generated_at": "2025-12-23T05:18:59.887133",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772613",
         "home_team": "Chicago Bears",
         "away_team": "Green Bay Packers",
-        "pick": "Chicago Bears",
-        "pick_home": true,
-        "confidence": 0.71,
-        "odds": "-162",
+        "home_abbrev": "CHI",
+        "away_abbrev": "GB",
+        "predictions": {
+          "moneyline": {
+            "pick": "Chicago Bears",
+            "pick_home": true,
+            "confidence": 0.793,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "CHI -4.3",
+            "pick_home": true,
+            "confidence": 0.634,
+            "spread_line": "CHI -4.3",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.605,
+            "total_line": 235,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.868135",
+        "generated_at": "2025-12-23T05:18:59.887645",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772802",
         "home_team": "Cleveland Browns",
         "away_team": "Buffalo Bills",
-        "pick": "Cleveland Browns",
-        "pick_home": true,
-        "confidence": 0.644,
-        "odds": "-148",
+        "home_abbrev": "CLE",
+        "away_abbrev": "BUF",
+        "predictions": {
+          "moneyline": {
+            "pick": "Cleveland Browns",
+            "pick_home": true,
+            "confidence": 0.52,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "CLE -5.4",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "CLE -5.4",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.599,
+            "total_line": 245,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869143",
+        "generated_at": "2025-12-23T05:18:59.887645",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772910",
         "home_team": "Dallas Cowboys",
         "away_team": "Los Angeles Chargers",
-        "pick": "Los Angeles Chargers",
-        "pick_home": false,
-        "confidence": 0.521,
-        "odds": "-124",
+        "home_abbrev": "DAL",
+        "away_abbrev": "LAC",
+        "predictions": {
+          "moneyline": {
+            "pick": "Dallas Cowboys",
+            "pick_home": true,
+            "confidence": 0.645,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "DAL -4.7",
+            "pick_home": true,
+            "confidence": 0.56,
+            "spread_line": "DAL -4.7",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.689,
+            "total_line": 220,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869143",
+        "generated_at": "2025-12-23T05:18:59.887645",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772803",
         "home_team": "Tennessee Titans",
         "away_team": "Kansas City Chiefs",
-        "pick": "Tennessee Titans",
-        "pick_home": true,
-        "confidence": 0.733,
-        "odds": "-166",
+        "home_abbrev": "TEN",
+        "away_abbrev": "KC",
+        "predictions": {
+          "moneyline": {
+            "pick": "Tennessee Titans",
+            "pick_home": true,
+            "confidence": 0.694,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "TEN -7.6",
+            "pick_home": true,
+            "confidence": 0.582,
+            "spread_line": "TEN -7.6",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.603,
+            "total_line": 235,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869143",
+        "generated_at": "2025-12-23T05:18:59.888348",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772934",
         "home_team": "Miami Dolphins",
         "away_team": "Cincinnati Bengals",
-        "pick": "Miami Dolphins",
-        "pick_home": true,
-        "confidence": 0.63,
-        "odds": "-146",
+        "home_abbrev": "MIA",
+        "away_abbrev": "CIN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Miami Dolphins",
+            "pick_home": true,
+            "confidence": 0.56,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "MIA -7.7",
+            "pick_home": true,
+            "confidence": 0.524,
+            "spread_line": "MIA -7.7",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "UNDER 210",
+            "pick_over": false,
+            "confidence": 0.614,
+            "total_line": 210,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869143",
+        "generated_at": "2025-12-23T05:18:59.888348",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772801",
         "home_team": "New Orleans Saints",
         "away_team": "New York Jets",
-        "pick": "New Orleans Saints",
-        "pick_home": true,
-        "confidence": 0.68,
-        "odds": "-156",
+        "home_abbrev": "NO",
+        "away_abbrev": "NYJ",
+        "predictions": {
+          "moneyline": {
+            "pick": "New Orleans Saints",
+            "pick_home": true,
+            "confidence": 0.614,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "NO -6.9",
+            "pick_home": true,
+            "confidence": 0.546,
+            "spread_line": "NO -6.9",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.676,
+            "total_line": 225,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869648",
+        "generated_at": "2025-12-23T05:18:59.888866",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772911",
         "home_team": "New York Giants",
         "away_team": "Minnesota Vikings",
-        "pick": "New York Giants",
-        "pick_home": true,
-        "confidence": 0.708,
-        "odds": "-161",
+        "home_abbrev": "NYG",
+        "away_abbrev": "MIN",
+        "predictions": {
+          "moneyline": {
+            "pick": "New York Giants",
+            "pick_home": true,
+            "confidence": 0.51,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "NYG -5.7",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "NYG -5.7",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.568,
+            "total_line": 230,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869648",
+        "generated_at": "2025-12-23T05:18:59.888866",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772912",
         "home_team": "Carolina Panthers",
         "away_team": "Tampa Bay Buccaneers",
-        "pick": "Carolina Panthers",
-        "pick_home": true,
-        "confidence": 0.521,
-        "odds": "+95",
+        "home_abbrev": "CAR",
+        "away_abbrev": "TB",
+        "predictions": {
+          "moneyline": {
+            "pick": "Tampa Bay Buccaneers",
+            "pick_home": false,
+            "confidence": 0.524,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "TB +3.8",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "CAR -3.8",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.695,
+            "total_line": 225,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869648",
+        "generated_at": "2025-12-23T05:18:59.889417",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772913",
         "home_team": "Denver Broncos",
         "away_team": "Jacksonville Jaguars",
-        "pick": "Denver Broncos",
-        "pick_home": true,
-        "confidence": 0.644,
-        "odds": "-148",
+        "home_abbrev": "DEN",
+        "away_abbrev": "JAX",
+        "predictions": {
+          "moneyline": {
+            "pick": "Denver Broncos",
+            "pick_home": true,
+            "confidence": 0.717,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "DEN -5.2",
+            "pick_home": true,
+            "confidence": 0.593,
+            "spread_line": "DEN -5.2",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.66,
+            "total_line": 230,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.869648",
+        "generated_at": "2025-12-23T05:18:59.889417",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772914",
         "home_team": "Arizona Cardinals",
         "away_team": "Atlanta Falcons",
-        "pick": "Atlanta Falcons",
-        "pick_home": false,
-        "confidence": 0.538,
-        "odds": "-127",
+        "home_abbrev": "ARI",
+        "away_abbrev": "ATL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Atlanta Falcons",
+            "pick_home": false,
+            "confidence": 0.68,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "ATL +4.0",
+            "pick_home": false,
+            "confidence": 0.575,
+            "spread_line": "ARI -4.0",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.602,
+            "total_line": 230,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.870163",
+        "generated_at": "2025-12-23T05:18:59.889417",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772806",
         "home_team": "Detroit Lions",
         "away_team": "Pittsburgh Steelers",
-        "pick": "Detroit Lions",
-        "pick_home": true,
-        "confidence": 0.675,
-        "odds": "-155",
+        "home_abbrev": "DET",
+        "away_abbrev": "PIT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Pittsburgh Steelers",
+            "pick_home": false,
+            "confidence": 0.745,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "PIT +5.9",
+            "pick_home": false,
+            "confidence": 0.607,
+            "spread_line": "DET -5.9",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.593,
+            "total_line": 225,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.870163",
+        "generated_at": "2025-12-23T05:18:59.889940",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772805",
         "home_team": "Houston Texans",
         "away_team": "Las Vegas Raiders",
-        "pick": "Houston Texans",
-        "pick_home": true,
-        "confidence": 0.583,
-        "odds": "+83",
+        "home_abbrev": "HOU",
+        "away_abbrev": "LV",
+        "predictions": {
+          "moneyline": {
+            "pick": "Houston Texans",
+            "pick_home": true,
+            "confidence": 0.587,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "HOU -3.8",
+            "pick_home": true,
+            "confidence": 0.535,
+            "spread_line": "HOU -3.8",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.544,
+            "total_line": 230,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.870163",
+        "generated_at": "2025-12-23T05:18:59.889940",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772804",
         "home_team": "Baltimore Ravens",
         "away_team": "New England Patriots",
-        "pick": "Baltimore Ravens",
-        "pick_home": true,
-        "confidence": 0.6,
-        "odds": "+80",
+        "home_abbrev": "BAL",
+        "away_abbrev": "NE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Baltimore Ravens",
+            "pick_home": true,
+            "confidence": 0.801,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "BAL -8.4",
+            "pick_home": true,
+            "confidence": 0.639,
+            "spread_line": "BAL -8.4",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.621,
+            "total_line": 215,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.870163",
+        "generated_at": "2025-12-23T05:18:59.890454",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401772824",
         "home_team": "Indianapolis Colts",
         "away_team": "San Francisco 49ers",
-        "pick": "San Francisco 49ers",
-        "pick_home": false,
-        "confidence": 0.517,
-        "odds": "-123",
+        "home_abbrev": "IND",
+        "away_abbrev": "SF",
+        "predictions": {
+          "moneyline": {
+            "pick": "San Francisco 49ers",
+            "pick_home": false,
+            "confidence": 0.556,
+            "model_accuracy": 0.651
+          },
+          "spread": {
+            "pick": "SF +4.9",
+            "pick_home": false,
+            "confidence": 0.522,
+            "spread_line": "IND -4.9",
+            "model_accuracy": 0.652
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.6,
+            "total_line": 215,
+            "model_accuracy": 0.563
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:11:34.870163",
+        "generated_at": "2025-12-23T05:18:59.890454",
         "status": "STATUS_FINAL"
       }
     ],
@@ -310,52 +770,132 @@
         "game_id": "401802922",
         "home_team": "Tampa Bay Lightning",
         "away_team": "St. Louis Blues",
-        "pick": "St. Louis Blues",
-        "pick_home": false,
-        "confidence": 0.51,
-        "odds": "-122",
+        "home_abbrev": "TB",
+        "away_abbrev": "STL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Tampa Bay Lightning",
+            "pick_home": true,
+            "confidence": 0.618,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "TB -3.2",
+            "pick_home": true,
+            "confidence": 0.54,
+            "spread_line": "TB -3.2",
+            "model_accuracy": 0.591
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.605,
+            "total_line": 240,
+            "model_accuracy": 0.601
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:11:35.291737",
+        "generated_at": "2025-12-23T05:19:00.312389",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401802923",
         "home_team": "Philadelphia Flyers",
         "away_team": "Vancouver Canucks",
-        "pick": "Philadelphia Flyers",
-        "pick_home": true,
-        "confidence": 0.584,
-        "odds": "+83",
+        "home_abbrev": "PHI",
+        "away_abbrev": "VAN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Philadelphia Flyers",
+            "pick_home": true,
+            "confidence": 0.634,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "PHI -7.5",
+            "pick_home": true,
+            "confidence": 0.545,
+            "spread_line": "PHI -7.5",
+            "model_accuracy": 0.591
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.587,
+            "total_line": 230,
+            "model_accuracy": 0.601
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:11:35.291737",
+        "generated_at": "2025-12-23T05:19:00.312907",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401802924",
         "home_team": "Anaheim Ducks",
         "away_team": "Seattle Kraken",
-        "pick": "Seattle Kraken",
-        "pick_home": false,
-        "confidence": 0.688,
-        "odds": "+62",
+        "home_abbrev": "ANA",
+        "away_abbrev": "SEA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Anaheim Ducks",
+            "pick_home": true,
+            "confidence": 0.57,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "ANA -4.0",
+            "pick_home": true,
+            "confidence": 0.523,
+            "spread_line": "ANA -4.0",
+            "model_accuracy": 0.591
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.713,
+            "total_line": 240,
+            "model_accuracy": 0.601
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:11:35.291737",
+        "generated_at": "2025-12-23T05:19:00.312907",
         "status": "STATUS_FINAL"
       },
       {
         "game_id": "401802925",
         "home_team": "Los Angeles Kings",
         "away_team": "Columbus Blue Jackets",
-        "pick": "Los Angeles Kings",
-        "pick_home": true,
-        "confidence": 0.623,
-        "odds": "-144",
+        "home_abbrev": "LA",
+        "away_abbrev": "CBJ",
+        "predictions": {
+          "moneyline": {
+            "pick": "Columbus Blue Jackets",
+            "pick_home": false,
+            "confidence": 0.574,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "CBJ +3.6",
+            "pick_home": false,
+            "confidence": 0.524,
+            "spread_line": "LA -3.6",
+            "model_accuracy": 0.591
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.702,
+            "total_line": 235,
+            "model_accuracy": 0.601
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:11:35.292254",
+        "generated_at": "2025-12-23T05:19:00.313447",
         "status": "STATUS_FINAL"
       }
     ],
@@ -364,65 +904,165 @@
         "game_id": "401832869",
         "home_team": "Baltimore Orioles",
         "away_team": "New York Yankees",
-        "pick": "New York Yankees",
-        "pick_home": false,
-        "confidence": 0.612,
-        "odds": "+77",
+        "home_abbrev": "BAL",
+        "away_abbrev": "NYY",
+        "predictions": {
+          "moneyline": {
+            "pick": "Baltimore Orioles",
+            "pick_home": true,
+            "confidence": 0.669,
+            "model_accuracy": 0.534
+          },
+          "spread": {
+            "pick": "BAL -7.7",
+            "pick_home": true,
+            "confidence": 0.575,
+            "spread_line": "BAL -7.7",
+            "model_accuracy": 0.556
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.552,
+            "total_line": 215,
+            "model_accuracy": 0.584
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:11:35.697867",
+        "generated_at": "2025-12-23T05:19:00.730322",
         "status": "STATUS_SCHEDULED"
       },
       {
         "game_id": "401832870",
         "home_team": "Chicago Cubs",
         "away_team": "Chicago White Sox",
-        "pick": "Chicago Cubs",
-        "pick_home": true,
-        "confidence": 0.585,
-        "odds": "+83",
+        "home_abbrev": "CHC",
+        "away_abbrev": "CHW",
+        "predictions": {
+          "moneyline": {
+            "pick": "Chicago Cubs",
+            "pick_home": true,
+            "confidence": 0.692,
+            "model_accuracy": 0.534
+          },
+          "spread": {
+            "pick": "CHC -6.8",
+            "pick_home": true,
+            "confidence": 0.587,
+            "spread_line": "CHC -6.8",
+            "model_accuracy": 0.556
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.592,
+            "total_line": 225,
+            "model_accuracy": 0.584
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:11:35.698376",
+        "generated_at": "2025-12-23T05:19:00.730322",
         "status": "STATUS_SCHEDULED"
       },
       {
         "game_id": "401832871",
         "home_team": "Colorado Rockies",
         "away_team": "Arizona Diamondbacks",
-        "pick": "Arizona Diamondbacks",
-        "pick_home": false,
-        "confidence": 0.51,
-        "odds": "-122",
+        "home_abbrev": "COL",
+        "away_abbrev": "ARI",
+        "predictions": {
+          "moneyline": {
+            "pick": "Colorado Rockies",
+            "pick_home": true,
+            "confidence": 0.715,
+            "model_accuracy": 0.534
+          },
+          "spread": {
+            "pick": "COL -4.0",
+            "pick_home": true,
+            "confidence": 0.599,
+            "spread_line": "COL -4.0",
+            "model_accuracy": 0.556
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.56,
+            "total_line": 230,
+            "model_accuracy": 0.584
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:11:35.698376",
+        "generated_at": "2025-12-23T05:19:00.730827",
         "status": "STATUS_SCHEDULED"
       },
       {
         "game_id": "401832872",
         "home_team": "Seattle Mariners",
         "away_team": "San Diego Padres",
-        "pick": "San Diego Padres",
-        "pick_home": false,
-        "confidence": 0.601,
-        "odds": "+79",
+        "home_abbrev": "SEA",
+        "away_abbrev": "SD",
+        "predictions": {
+          "moneyline": {
+            "pick": "Seattle Mariners",
+            "pick_home": true,
+            "confidence": 0.567,
+            "model_accuracy": 0.534
+          },
+          "spread": {
+            "pick": "SEA -3.4",
+            "pick_home": true,
+            "confidence": 0.528,
+            "spread_line": "SEA -3.4",
+            "model_accuracy": 0.556
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.679,
+            "total_line": 225,
+            "model_accuracy": 0.584
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:11:35.698376",
+        "generated_at": "2025-12-23T05:19:00.730827",
         "status": "STATUS_SCHEDULED"
       },
       {
         "game_id": "401832873",
         "home_team": "Texas Rangers",
         "away_team": "Kansas City Royals",
-        "pick": "Texas Rangers",
-        "pick_home": true,
-        "confidence": 0.524,
-        "odds": "+95",
+        "home_abbrev": "TEX",
+        "away_abbrev": "KC",
+        "predictions": {
+          "moneyline": {
+            "pick": "Texas Rangers",
+            "pick_home": true,
+            "confidence": 0.642,
+            "model_accuracy": 0.534
+          },
+          "spread": {
+            "pick": "TEX -3.5",
+            "pick_home": true,
+            "confidence": 0.562,
+            "spread_line": "TEX -3.5",
+            "model_accuracy": 0.556
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.695,
+            "total_line": 225,
+            "model_accuracy": 0.584
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:11:35.698376",
+        "generated_at": "2025-12-23T05:19:00.731340",
         "status": "STATUS_SCHEDULED"
       }
     ],
@@ -431,13 +1071,33 @@
         "game_id": "740769",
         "home_team": "Manchester United",
         "away_team": "Newcastle United",
-        "pick": "Manchester United",
-        "pick_home": true,
-        "confidence": 0.59,
-        "odds": "+82",
+        "home_abbrev": "MAN",
+        "away_abbrev": "NEW",
+        "predictions": {
+          "moneyline": {
+            "pick": "Manchester United",
+            "pick_home": true,
+            "confidence": 0.661,
+            "model_accuracy": 0.643
+          },
+          "spread": {
+            "pick": "MAN -6.6",
+            "pick_home": true,
+            "confidence": 0.578,
+            "spread_line": "MAN +145",
+            "model_accuracy": 0.753
+          },
+          "total": {
+            "pick": "OVER 2.5",
+            "pick_over": true,
+            "confidence": 0.632,
+            "total_line": 2.5,
+            "model_accuracy": 0.615
+          }
+        },
         "model_version": "v6_behavioral",
         "sport": "soccer",
-        "generated_at": "2025-12-23T05:11:36.163277",
+        "generated_at": "2025-12-23T05:19:01.126430",
         "status": "STATUS_SCHEDULED"
       }
     ]

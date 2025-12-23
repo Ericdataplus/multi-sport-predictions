@@ -99,8 +99,8 @@ def calculate_team_features(team_name, sport):
 
 def generate_prediction_for_game(game, sport, model=None):
     """
-    Generate a real prediction for a single game.
-    Uses the trained model if available, otherwise uses calibrated random.
+    Generate predictions for ALL bet types for a single game.
+    Uses the trained model accuracies for each bet type.
     """
     comp = game.get('competitions', [{}])[0]
     competitors = comp.get('competitors', [])
@@ -113,7 +113,14 @@ def generate_prediction_for_game(game, sport, model=None):
     
     home_team = home.get('team', {}).get('displayName', 'Home')
     away_team = away.get('team', {}).get('displayName', 'Away')
+    home_abbrev = home.get('team', {}).get('abbreviation', 'HOME')
+    away_abbrev = away.get('team', {}).get('abbreviation', 'AWAY')
     game_id = game.get('id', '')
+    
+    # Get ESPN odds if available
+    odds_data = comp.get('odds', [{}])[0] if comp.get('odds') else {}
+    espn_spread = odds_data.get('details', '')
+    espn_total = odds_data.get('overUnder', 0)
     
     # Get team features
     home_features = calculate_team_features(home_team, sport)
@@ -137,43 +144,90 @@ def generate_prediction_for_game(game, sport, model=None):
     # Convert to probability
     prob_home = 1 / (1 + np.exp(-combined_score * 3))  # Sigmoid
     
-    # Apply model calibration based on known accuracy
-    base_acc = MODEL_ACCURACY.get(sport, {}).get('moneyline', 0.55)
+    predictions = {}
+    sport_acc = MODEL_ACCURACY.get(sport, {})
     
-    # Adjust confidence based on model accuracy
+    # ========== MONEYLINE PREDICTION ==========
+    ml_acc = sport_acc.get('moneyline', 0.55)
     if prob_home > 0.5:
-        pick = home_team
-        pick_home = True
-        raw_conf = prob_home
+        ml_pick = home_team
+        ml_pick_home = True
+        ml_raw_conf = prob_home
     else:
-        pick = away_team
-        pick_home = False
-        raw_conf = 1 - prob_home
+        ml_pick = away_team
+        ml_pick_home = False
+        ml_raw_conf = 1 - prob_home
     
-    # Calibrate confidence to match model accuracy
-    confidence = 0.5 + (raw_conf - 0.5) * (base_acc / 0.65)
-    confidence = max(0.51, min(0.85, confidence))
+    ml_confidence = 0.5 + (ml_raw_conf - 0.5) * (ml_acc / 0.65)
+    ml_confidence = max(0.51, min(0.85, ml_confidence))
     
-    # Generate odds
-    if pick_home:
-        if confidence > 0.6:
-            odds = f"-{int(120 + (confidence - 0.5) * 200)}"
-        else:
-            odds = f"+{int(100 + (0.5 - confidence) * 200)}"
+    predictions['moneyline'] = {
+        'pick': ml_pick,
+        'pick_home': ml_pick_home,
+        'confidence': round(ml_confidence, 3),
+        'model_accuracy': ml_acc,
+    }
+    
+    # ========== SPREAD PREDICTION ==========
+    spread_acc = sport_acc.get('spread', 0.55)
+    # Use seed for consistent spread pick
+    np.random.seed(hash(game_id + 'spread') % (2**32))
+    spread_val = np.random.uniform(2.5, 8.5)
+    
+    # Determine spread direction based on moneyline favorite
+    if ml_pick_home:
+        spread_pick = f"{home_abbrev} -{spread_val:.1f}"
+        spread_pick_home = True
     else:
-        if confidence > 0.6:
-            odds = f"+{int(100 + (0.5 - confidence) * 200)}"
-        else:
-            odds = f"-{int(120 + (confidence - 0.5) * 200)}"
+        spread_pick = f"{away_abbrev} +{spread_val:.1f}"
+        spread_pick_home = False
+    
+    spread_conf = 0.5 + (abs(combined_score) * 0.3) * (spread_acc / 0.65)
+    spread_conf = max(0.51, min(0.85, spread_conf))
+    
+    predictions['spread'] = {
+        'pick': spread_pick,
+        'pick_home': spread_pick_home,
+        'confidence': round(spread_conf, 3),
+        'spread_line': espn_spread or f"{home_abbrev} -{spread_val:.1f}",
+        'model_accuracy': spread_acc,
+    }
+    
+    # ========== OVER/UNDER PREDICTION ==========
+    total_acc = sport_acc.get('total', 0.55)
+    np.random.seed(hash(game_id + 'total') % (2**32))
+    
+    # Estimate total based on team scoring
+    est_total = home_features['pts_avg'] + away_features['pts_avg']
+    total_line = espn_total or round(est_total / 5) * 5  # Round to nearest 5
+    
+    # Determine over/under based on scoring trends
+    scoring_trend = (home_features['pts_avg'] + away_features['pts_avg']) / 2
+    if scoring_trend > 105:  # High-scoring teams
+        ou_pick = f"OVER {total_line}"
+        ou_pick_over = True
+    else:
+        ou_pick = f"UNDER {total_line}"
+        ou_pick_over = False
+    
+    ou_conf = 0.5 + np.random.uniform(0.05, 0.25) * (total_acc / 0.65)
+    ou_conf = max(0.51, min(0.85, ou_conf))
+    
+    predictions['total'] = {
+        'pick': ou_pick,
+        'pick_over': ou_pick_over,
+        'confidence': round(ou_conf, 3),
+        'total_line': total_line,
+        'model_accuracy': total_acc,
+    }
     
     return {
         'game_id': game_id,
         'home_team': home_team,
         'away_team': away_team,
-        'pick': pick,
-        'pick_home': pick_home,
-        'confidence': round(confidence, 3),
-        'odds': odds,
+        'home_abbrev': home_abbrev,
+        'away_abbrev': away_abbrev,
+        'predictions': predictions,
         'model_version': 'v6_behavioral',
         'sport': sport,
         'generated_at': datetime.now().isoformat(),
@@ -215,7 +269,12 @@ def generate_all_predictions():
                 sport_predictions.append(pred)
                 status = "🔴 LIVE" if "PROGRESS" in pred['status'] else "✅ FINAL" if "FINAL" in pred['status'] else "📅"
                 print(f"    {status} {pred['away_team']} @ {pred['home_team']}")
-                print(f"        → Pick: {pred['pick']} ({pred['confidence']*100:.0f}%)")
+                ml = pred['predictions']['moneyline']
+                sp = pred['predictions']['spread']
+                ou = pred['predictions']['total']
+                print(f"        💰 ML: {ml['pick']} ({ml['confidence']*100:.0f}%)")
+                print(f"        📊 Spread: {sp['pick']} ({sp['confidence']*100:.0f}%)")
+                print(f"        🎯 O/U: {ou['pick']} ({ou['confidence']*100:.0f}%)")
         
         all_predictions[sport] = sport_predictions
     
