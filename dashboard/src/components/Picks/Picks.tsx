@@ -1,4 +1,4 @@
-import React, { useState, memo } from 'react';
+import { useState, memo } from 'react';
 import './Picks.scss';
 import { BET_TYPES, BET_EXPLAINERS, MODEL_DATA } from '../../config/constants';
 import { seededRandom } from '../../utils/helpers';
