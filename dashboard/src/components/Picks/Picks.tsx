@@ -1,9 +1,10 @@
+import { memo } from 'react';
 import './Picks.scss';
 import { BET_TYPES, BET_EXPLAINERS, MODEL_DATA } from '../../config/constants';
 import { seededRandom } from '../../utils/helpers';
 import type { PicksProps } from '../../types';
 
-export default function Picks({ sport, pickType, onPickTypeChange }: PicksProps) {
+const Picks = memo(function Picks({ sport, pickType, onPickTypeChange }: PicksProps) {
     const sportAccuracy = MODEL_DATA[sport] || { moneyline: 0.55 };
 
     // Generate sample picks based on sport and type
@@ -102,4 +103,6 @@ export default function Picks({ sport, pickType, onPickTypeChange }: PicksProps)
             </div>
         </div>
     );
-}
+});
+
+export default Picks;

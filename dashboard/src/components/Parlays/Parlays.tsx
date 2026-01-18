@@ -1,8 +1,9 @@
+import { memo } from 'react';
 import './Parlays.scss';
 import { PARLAY_CONFIGS } from '../../config/constants';
 import type { ParlaysProps } from '../../types';
 
-export default function Parlays({ games }: ParlaysProps) {
+const Parlays = memo(function Parlays({ games }: ParlaysProps) {
     if (games.length < 2) {
         return (
             <div className="section">
@@ -59,4 +60,6 @@ export default function Parlays({ games }: ParlaysProps) {
             </div>
         </div>
     );
-}
+});
+
+export default Parlays;

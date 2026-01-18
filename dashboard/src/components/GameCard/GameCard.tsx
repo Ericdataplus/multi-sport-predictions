@@ -1,8 +1,10 @@
+import { memo } from 'react';
 import './GameCard.scss';
 import { formatGameTime } from '../../utils/helpers';
 import type { GameCardProps } from '../../types';
 
-export default function GameCard({ game, prediction, onTrack }: GameCardProps) {
+// memo() = Only re-render if props actually change
+const GameCard = memo(function GameCard({ game, prediction, onTrack }: GameCardProps) {
     const { status, homeTeam, awayTeam, venue, broadcast, odds, overUnder } = game;
 
     const homeWins = status.isFinal && homeTeam.score > awayTeam.score;
@@ -114,4 +116,6 @@ export default function GameCard({ game, prediction, onTrack }: GameCardProps) {
             )}
         </div>
     );
-}
+});
+
+export default GameCard;
