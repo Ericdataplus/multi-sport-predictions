@@ -1,0 +1,75 @@
+// ==========================================
+// MIXINS
+// ==========================================
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin card($bg: $bg-card) {
+    background: $bg;
+    border-radius: $radius-lg;
+    border: 1px solid $border-color;
+}
+
+@mixin card-hover {
+    transition: all $transition-fast;
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: $accent-primary;
+        box-shadow: $shadow-card;
+    }
+}
+
+@mixin gradient-primary {
+    background: linear-gradient(135deg, $accent-primary 0%, $accent-secondary 100%);
+}
+
+@mixin button($bg: $accent-primary) {
+    background: $bg;
+    border: none;
+    color: white;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $radius-md;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all $transition-fast;
+
+    &:hover {
+        background: $accent-secondary;
+        transform: scale(1.02);
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin truncate($max-width: 100%) {
+    max-width: $max-width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

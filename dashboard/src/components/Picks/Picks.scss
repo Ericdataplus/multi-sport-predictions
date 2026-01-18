@@ -1,0 +1,146 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.picks-tabs {
+    display: flex;
+    gap: $spacing-xs;
+    margin-bottom: $spacing-md;
+    flex-wrap: wrap;
+}
+
+.picks-tab {
+    flex: 1;
+    padding: $spacing-sm;
+    border: none;
+    background: $bg-card;
+    color: $text-secondary;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all $transition-fast;
+    min-width: 60px;
+
+    &:hover {
+        background: $bg-card-hover;
+    }
+
+    &.active {
+        background: $accent-primary;
+        color: white;
+    }
+
+    @include phone {
+        flex: 0 0 calc(33.33% - 0.25rem);
+        font-size: 0.65rem;
+        padding: $spacing-sm 0.3rem;
+    }
+}
+
+.bet-explainer {
+    font-size: 0.7rem;
+    color: $text-secondary;
+    padding: $spacing-sm 0;
+    border-bottom: 1px dashed $border-color;
+    margin-bottom: $spacing-sm;
+}
+
+.picks-list {
+    @include flex-column;
+    gap: 0.6rem;
+}
+
+.pick-card {
+    @include card;
+    @include flex-between;
+    padding: $spacing-md;
+
+    &:hover {
+        border-color: $accent-primary;
+    }
+
+    @include phone {
+        padding: 0.65rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $spacing-sm;
+    }
+}
+
+.pick-info {
+    @include flex-column;
+    gap: 0.2rem;
+}
+
+.pick-team {
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.pick-odds {
+    font-size: 0.75rem;
+    color: $accent-yellow;
+    font-weight: 600;
+}
+
+.pick-confidence {
+    text-align: right;
+
+    @include phone {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: $spacing-sm;
+    }
+}
+
+.confidence-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: $accent-green;
+
+    @include phone {
+        font-size: 1rem;
+    }
+}
+
+.ev-badge {
+    font-size: 0.7rem;
+    color: $accent-yellow;
+    font-weight: 600;
+}
+
+.history-placeholder,
+.contracts-guide {
+    text-align: center;
+    padding: $spacing-lg;
+    color: $text-secondary;
+    font-size: 0.8rem;
+
+    .hint,
+    .tip {
+        font-size: 0.7rem;
+        margin-top: $spacing-sm;
+        opacity: 0.7;
+    }
+}
+
+.contracts-guide {
+    text-align: left;
+    line-height: 1.6;
+
+    .guide-title {
+        color: $accent-green;
+        font-weight: 600;
+        margin-bottom: $spacing-sm;
+    }
+
+    .tip {
+        padding: $spacing-sm;
+        background: rgba($accent-primary, 0.1);
+        border-radius: $radius-md;
+        border-left: 3px solid $accent-primary;
+        margin-top: $spacing-md;
+    }
+}

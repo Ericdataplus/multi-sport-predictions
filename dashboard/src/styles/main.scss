@@ -1,0 +1,104 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background: $bg-primary;
+    color: $text-primary;
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+// Animations
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Utilities
+.loading {
+    text-align: center;
+    padding: $spacing-xl;
+    color: $text-secondary;
+}
+
+.loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid $bg-card;
+    border-top-color: $accent-primary;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: 0 auto $spacing-sm;
+}
+
+.btn {
+    @include button;
+    font-size: 0.8rem;
+}
+
+// Layout
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: $spacing-lg;
+    padding: $spacing-lg;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        padding: $spacing-md;
+    }
+
+    @include phone {
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+}
+
+.section {
+    @include card($bg-secondary);
+    padding: 1.25rem;
+
+    @include phone {
+        padding: 0.875rem;
+    }
+}
+
+.section-header {
+    @include flex-between;
+    margin-bottom: $spacing-md;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $border-color;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+}

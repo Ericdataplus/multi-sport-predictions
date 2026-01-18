@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.header {
+    @include gradient-primary;
+    @include flex-between;
+    padding: 1.25rem $spacing-xl;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: $shadow-glow;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        padding: $spacing-md;
+        gap: 0.75rem;
+        text-align: center;
+
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+
+    @include phone {
+        padding: 0.875rem;
+
+        h1 {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.header-stats {
+    display: flex;
+    gap: $spacing-xl;
+
+    @include tablet {
+        gap: 0.75rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.stat-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    padding: $spacing-sm $spacing-md;
+    border-radius: 10px;
+
+    @include phone {
+        padding: 0.35rem $spacing-sm;
+        min-width: 60px;
+    }
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    @include phone {
+        font-size: 0.95rem;
+    }
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

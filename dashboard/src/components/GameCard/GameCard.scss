@@ -1,0 +1,215 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.game-card {
+    @include card;
+    @include card-hover;
+    padding: $spacing-md;
+
+    &.live {
+        border-left: 3px solid $accent-red;
+        background: linear-gradient(90deg, rgba($accent-red, 0.08), $bg-card);
+    }
+
+    &.final {
+        border-left: 3px solid $accent-green;
+    }
+
+    @include phone {
+        padding: 0.75rem;
+    }
+}
+
+.game-status {
+    @include flex-between;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.status-live {
+    color: $accent-red;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $accent-red;
+        border-radius: 50%;
+        animation: pulse 1s infinite;
+    }
+}
+
+.status-final {
+    color: $accent-green;
+    font-weight: 600;
+}
+
+.status-scheduled {
+    color: $text-secondary;
+}
+
+.broadcast {
+    font-size: 0.7rem;
+    color: $text-secondary;
+}
+
+.venue-odds {
+    @include flex-between;
+    font-size: 0.7rem;
+    color: $text-secondary;
+    margin-bottom: $spacing-sm;
+    padding: $spacing-xs 0;
+    border-bottom: 1px dashed $border-color;
+
+    .odds {
+        color: $accent-yellow;
+    }
+}
+
+.teams-container {
+    @include flex-column;
+    gap: 0.4rem;
+}
+
+.team-row {
+    @include flex-between;
+    padding: 0.4rem 0;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.team-logo {
+    @include flex-center;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: $bg-secondary;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.team-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    @include phone {
+        font-size: 0.8rem;
+    }
+}
+
+.team-record {
+    font-size: 0.7rem;
+    color: $text-secondary;
+}
+
+.score-section {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+}
+
+.line-scores {
+    display: flex;
+    gap: $spacing-xs;
+    font-size: 0.65rem;
+    color: $text-secondary;
+
+    .quarter-score {
+        background: $bg-card;
+        padding: 0.1rem 0.25rem;
+        border-radius: 3px;
+    }
+}
+
+.team-score {
+    font-size: 1.4rem;
+    font-weight: 800;
+    min-width: 2rem;
+    text-align: right;
+
+    &.winner {
+        color: $accent-green;
+    }
+
+    &.loser {
+        color: $accent-red;
+    }
+
+    @include phone {
+        font-size: 1.1rem;
+    }
+}
+
+.game-prediction {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid $border-color;
+    @include flex-between;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all $transition-fast;
+
+    &:hover {
+        background: rgba($accent-primary, 0.05);
+        margin: 0.75rem -$spacing-md 0;
+        padding: 0.75rem $spacing-md 0;
+    }
+
+    &.result {
+        cursor: default;
+        border-radius: $radius-md;
+        padding: $spacing-sm;
+
+        &.won {
+            background: rgba($accent-green, 0.15);
+        }
+
+        &.lost {
+            background: rgba($accent-red, 0.15);
+        }
+
+        .result-text {
+            font-weight: 700;
+        }
+
+        &.won .result-text {
+            color: $accent-green;
+        }
+
+        &.lost .result-text {
+            color: $accent-red;
+        }
+    }
+}
+
+.prediction-badge {
+    @include gradient-primary;
+    color: white;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.model-badge {
+    font-size: 0.55rem;
+    background: $accent-primary;
+    color: white;
+    padding: 0.1rem 0.3rem;
+    border-radius: $radius-sm;
+    margin-left: 0.3rem;
+}
+
+.track-icon {
+    font-size: 0.6rem;
+    opacity: 0.6;
+    margin-left: $spacing-sm;
+}

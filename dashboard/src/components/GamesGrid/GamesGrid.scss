@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.games-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.no-games,
+.error {
+    text-align: center;
+    padding: $spacing-xl;
+    color: $text-secondary;
+}
+
+.error {
+    color: $accent-red;
+}

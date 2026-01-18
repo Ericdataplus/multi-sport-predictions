@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.sidebar {
+    @include flex-column;
+    gap: $spacing-md;
+}
