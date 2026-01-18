@@ -1,4 +1,5 @@
-# Multi-Sport Predictions
+# Jig Sports Predictions
+
 
 ML-powered sports prediction dashboard with V6 behavioral proxy models.
 
@@ -43,3 +44,6 @@ python scripts/train_v6_mlb.py
 
 ## License
 Private - All Rights Reserved
+
+## Credits
+Original framework based on open source work by Ericdataplus.

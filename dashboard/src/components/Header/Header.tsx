@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <header className="header">
-            <h1>🏆 Multi-Sport Predictions</h1>
+            <h1>🏆 Jig Sports Predictions</h1>
             <div className="header-stats">
                 <div className="stat-item" title="AI accuracy across all sports">
                     <div className="stat-value">{accuracy}%</div>
