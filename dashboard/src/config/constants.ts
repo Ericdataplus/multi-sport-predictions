@@ -56,6 +56,7 @@ export const BET_TYPES: BetType[] = [
     { id: 'moneyline', label: 'Moneyline', title: 'Pick the winner' },
     { id: 'spread', label: 'Spread', title: 'Win by enough points' },
     { id: 'total', label: 'O/U', title: 'Over or Under total' },
+    { id: 'props', label: 'Player Props', title: 'Individual player stats' },
     { id: 'contracts', label: '📈 Contracts', title: 'Trade like stocks' },
     { id: 'history', label: '📜 History', title: 'Past predictions' }
 ];
@@ -65,6 +66,7 @@ export const BET_EXPLAINERS: Record<string, string> = {
     moneyline: '💡 <strong>Moneyline</strong> = Pick who wins. Simplest bet!',
     spread: '💡 <strong>Spread</strong> = Win by enough points.',
     total: '💡 <strong>Over/Under</strong> = Total score over or under a line.',
+    props: '💡 <strong>Player Props</strong> = Bet on individual player stats (e.g., Yards, TDs).',
     contracts: '💡 <strong>Contracts</strong> = Trade predictions like stocks!',
     history: '📜 Your tracked predictions and results.'
 };

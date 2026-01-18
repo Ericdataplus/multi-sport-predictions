@@ -1,0 +1,15 @@
+{
+  "nfl": {
+    "accuracy": 0.62,
+    "roi": 0.12
+  },
+  "nba": {
+    "accuracy": 0.58,
+    "roi": 0.08
+  },
+  "ncaa_football": {
+    "accuracy": 0.59,
+    "roi": 0.09
+  },
+  "last_updated": "2026-01-17T19:54:35.721396"
+}

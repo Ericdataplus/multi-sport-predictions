@@ -1,13 +1,18 @@
-import { memo } from 'react';
+import React, { useState, memo } from 'react';
 import './Picks.scss';
 import { BET_TYPES, BET_EXPLAINERS, MODEL_DATA } from '../../config/constants';
 import { seededRandom } from '../../utils/helpers';
+import { usePlayerProps } from '../../hooks/usePlayerProps';
 import type { PicksProps } from '../../types';
 
 const Picks = memo(function Picks({ sport, pickType, onPickTypeChange }: PicksProps) {
+    const [searchTerm, setSearchTerm] = useState('');
     const sportAccuracy = MODEL_DATA[sport] || { moneyline: 0.55 };
 
-    // Generate sample picks based on sport and type
+    // Load Real Player Props
+    const { props: playerProps, loading: propsLoading } = usePlayerProps(sport);
+
+    // Generate sample picks for other types (Mock)
     const generatePicks = () => {
         const teams = ['Lakers', 'Celtics', 'Warriors', 'Heat', 'Bucks', 'Suns', '76ers', 'Nuggets'];
         const picks = [];
@@ -41,7 +46,44 @@ const Picks = memo(function Picks({ sport, pickType, onPickTypeChange }: PicksPr
         return picks.sort((a, b) => b.conf - a.conf);
     };
 
-    const picks = pickType !== 'history' && pickType !== 'contracts' ? generatePicks() : [];
+    // Prepare Props for Display
+    const getDisplayProps = () => {
+        if (pickType !== 'props') return [];
+        if (!playerProps) return [];
+
+        const groupPriority: Record<string, number> = {
+            'National Championship': 10,
+            'AFC Championship': 5,
+            'NFC Championship': 5,
+            'Playoff Matchup': 4,
+            'Regular Season': 0
+        };
+
+        let activeProps = [...playerProps];
+
+        // Filter
+        if (searchTerm) {
+            const lower = searchTerm.toLowerCase();
+            activeProps = activeProps.filter(p =>
+                p.player.toLowerCase().includes(lower) ||
+                (p.team && p.team.toLowerCase().includes(lower)) ||
+                (p.prop && p.prop.toLowerCase().includes(lower)) ||
+                (p.position && p.position.toLowerCase().includes(lower))
+            );
+        }
+
+        return activeProps.sort((a, b) => {
+            const gA = a.event_group || 'Regular Season';
+            const gB = b.event_group || 'Regular Season';
+            const pA = groupPriority[gA] || 0;
+            const pB = groupPriority[gB] || 0;
+            if (pA !== pB) return pB - pA;
+            return b.confidence - a.confidence;
+        }).slice(0, 50); // Limit to top 50
+    };
+
+    const mockPicks = (pickType !== 'history' && pickType !== 'contracts' && pickType !== 'props') ? generatePicks() : [];
+    const realProps = getDisplayProps();
 
     return (
         <div className="section">
@@ -69,9 +111,34 @@ const Picks = memo(function Picks({ sport, pickType, onPickTypeChange }: PicksPr
                 dangerouslySetInnerHTML={{ __html: BET_EXPLAINERS[pickType] || '' }}
             />
 
-            {/* Picks List */}
+            {/* Search Bar for Props */}
+            {pickType === 'props' && (
+                <div style={{ marginBottom: '1rem', marginTop: '0.5rem' }}>
+                    <input
+                        type="text"
+                        placeholder="🔍 Search player, team, or position..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        style={{
+                            width: '100%',
+                            padding: '0.6rem 0.8rem',
+                            borderRadius: '0.5rem',
+                            border: '1px solid #374151',
+                            backgroundColor: '#1f2937',
+                            color: '#f3f4f6',
+                            fontSize: '0.9rem',
+                            outline: 'none'
+                        }}
+                    />
+                </div>
+            )}
+
+            {/* Loading State for Props */}
+            {pickType === 'props' && propsLoading && <div className="loading">Loading Props...</div>}
+
+            {/* Picks List (Mock) */}
             <div className="picks-list">
-                {picks.map((pick, idx) => (
+                {mockPicks.map((pick, idx) => (
                     <div key={idx} className="pick-card">
                         <div className="pick-info">
                             <div className="pick-team">{pick.team}</div>
@@ -83,6 +150,57 @@ const Picks = memo(function Picks({ sport, pickType, onPickTypeChange }: PicksPr
                         </div>
                     </div>
                 ))}
+
+                {/* Real Player Props List */}
+                {pickType === 'props' && realProps.map((prop, idx) => {
+                    const group = prop.event_group || 'Regular Season';
+                    const prevGroup = idx > 0 ? (realProps[idx - 1].event_group || 'Regular Season') : null;
+                    const showHeader = group !== 'Regular Season' && group !== prevGroup;
+
+                    return (
+                        <div key={idx} className="prop-wrapper">
+                            {showHeader && (
+                                <div style={{
+                                    fontSize: '0.8rem',
+                                    fontWeight: 700,
+                                    color: '#facc15',
+                                    margin: '0.75rem 0 0.4rem 0.2rem',
+                                    borderBottom: '1px solid #374151',
+                                    paddingBottom: '0.2rem',
+                                    display: 'flex',
+                                    justifyContent: 'space-between'
+                                }}>
+                                    <span>{group}</span>
+                                    <span style={{ fontWeight: 400, opacity: 0.8, fontSize: '0.7rem' }}>{prop.matchup}</span>
+                                </div>
+                            )}
+                            <div className="pick-card">
+                                <div className="pick-info">
+                                    <div className="pick-team" style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+                                        {prop.player}
+                                        <span style={{ fontSize: '0.7rem', color: '#9ca3af', fontWeight: 400 }}>
+                                            ({prop.position || 'Unknown'} - {prop.team})
+                                        </span>
+                                    </div>
+                                    <div className="pick-type">{prop.prop}: {prop.line !== null ? prop.line : ''} {prop.pick}</div>
+                                </div>
+                                <div className="pick-confidence">
+                                    <div className="confidence-value">{(prop.confidence * 100).toFixed(0)}%</div>
+                                    <div className="ev-badge" style={{ fontSize: '0.6rem', color: '#9ca3af' }}>
+                                        Avg: {prop.player_avg}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+
+                {/* Empty State if search yields no results */}
+                {pickType === 'props' && !propsLoading && realProps.length === 0 && (
+                    <div style={{ textAlign: 'center', padding: '2rem', color: '#9ca3af', fontSize: '0.9rem' }}>
+                        {searchTerm ? 'No players found matching your search.' : 'No props available for this sport.'}
+                    </div>
+                )}
 
                 {pickType === 'history' && (
                     <div className="history-placeholder">

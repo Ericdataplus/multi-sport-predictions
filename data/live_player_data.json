@@ -1,0 +1,1053 @@
+{
+  "fetched_at": "2026-01-17T20:04:54.810190",
+  "teams": {
+    "DEN": "Denver Broncos",
+    "HOU": "Houston Texans",
+    "LAR": "Los Angeles Rams",
+    "SF": "San Francisco 49ers",
+    "MIA": "Miami Hurricanes",
+    "IND": "Indiana Hoosiers"
+  },
+  "players": {
+    "Nate Adkins": {
+      "id": "4383440",
+      "name": "Nate Adkins",
+      "position": "TE",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Tyler Badie": {
+      "id": "4362748",
+      "name": "Tyler Badie",
+      "position": "RB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Pat Bryant": {
+      "id": "4600981",
+      "name": "Pat Bryant",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Sam Ehlinger": {
+      "id": "4241820",
+      "name": "Sam Ehlinger",
+      "position": "QB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Evan Engram": {
+      "id": "3051876",
+      "name": "Evan Engram",
+      "position": "TE",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Troy Franklin": {
+      "id": "4431280",
+      "name": "Troy Franklin",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "RJ Harvey": {
+      "id": "4568490",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Lil'Jordan Humphrey": {
+      "id": "4039057",
+      "name": "Lil'Jordan Humphrey",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Caleb Lohner": {
+      "id": "4432208",
+      "name": "Caleb Lohner",
+      "position": "TE",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jaleel McLaughlin": {
+      "id": "4722893",
+      "name": "Jaleel McLaughlin",
+      "position": "RB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Marvin Mims Jr.": {
+      "id": "4686472",
+      "name": "Marvin Mims Jr.",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Elijah Moore": {
+      "id": "4372414",
+      "name": "Elijah Moore",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Bo Nix": {
+      "id": "4426338",
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jarrett Stidham": {
+      "id": "3892775",
+      "name": "Jarrett Stidham",
+      "position": "QB",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Courtland Sutton": {
+      "id": "3128429",
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Adam Trautman": {
+      "id": "3911853",
+      "name": "Adam Trautman",
+      "position": "TE",
+      "team": "DEN",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Braxton Berrios": {
+      "id": "3123075",
+      "name": "Braxton Berrios",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "British Brooks": {
+      "id": "4373273",
+      "name": "British Brooks",
+      "position": "RB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Harrison Bryant": {
+      "id": "4040774",
+      "name": "Harrison Bryant",
+      "position": "TE",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Nick Chubb": {
+      "id": "3128720",
+      "name": "Nick Chubb",
+      "position": "RB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Nico Collins": {
+      "id": "4258173",
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jayden Higgins": {
+      "id": "4877706",
+      "name": "Jayden Higgins",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Xavier Hutchinson": {
+      "id": "4686422",
+      "name": "Xavier Hutchinson",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jawhar Jordan": {
+      "id": "4429939",
+      "name": "Jawhar Jordan",
+      "position": "RB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Christian Kirk": {
+      "id": "3895856",
+      "name": "Christian Kirk",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Woody Marks": {
+      "id": "4429059",
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Graham Mertz": {
+      "id": "4426335",
+      "name": "Graham Mertz",
+      "position": "QB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Davis Mills": {
+      "id": "4242546",
+      "name": "Davis Mills",
+      "position": "QB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jaylin Noel": {
+      "id": "4586312",
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Dare Ogunbowale": {
+      "id": "2983509",
+      "name": "Dare Ogunbowale",
+      "position": "RB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Dalton Schultz": {
+      "id": "3117256",
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Cade Stover": {
+      "id": "4426496",
+      "name": "Cade Stover",
+      "position": "TE",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "C.J. Stroud": {
+      "id": "4432577",
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Justin Watson": {
+      "id": "3118892",
+      "name": "Justin Watson",
+      "position": "WR",
+      "team": "HOU",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Davante Adams": {
+      "id": "16800",
+      "name": "Davante Adams",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Davis Allen": {
+      "id": "4426553",
+      "name": "Davis Allen",
+      "position": "TE",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Tutu Atwell": {
+      "id": "4360797",
+      "name": "Tutu Atwell",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Stetson Bennett IV": {
+      "id": "4259553",
+      "name": "Stetson Bennett IV",
+      "position": "QB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Blake Corum": {
+      "id": "4429096",
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Terrance Ferguson": {
+      "id": "4570037",
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jimmy Garoppolo": {
+      "id": "16760",
+      "name": "Jimmy Garoppolo",
+      "position": "QB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Tyler Higbee": {
+      "id": "2573401",
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jarquez Hunter": {
+      "id": "4710341",
+      "name": "Jarquez Hunter",
+      "position": "RB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Konata Mumpfield": {
+      "id": "4710855",
+      "name": "Konata Mumpfield",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Puka Nacua": {
+      "id": "4426515",
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Colby Parkinson": {
+      "id": "4242557",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Brennan Presley": {
+      "id": "4431342",
+      "name": "Brennan Presley",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Ronnie Rivers": {
+      "id": "4243003",
+      "name": "Ronnie Rivers",
+      "position": "RB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Xavier Smith": {
+      "id": "4386544",
+      "name": "Xavier Smith",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Matthew Stafford": {
+      "id": "12483",
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Nick Vannett": {
+      "id": "2576399",
+      "name": "Nick Vannett",
+      "position": "TE",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jordan Whittington": {
+      "id": "4569382",
+      "name": "Jordan Whittington",
+      "position": "WR",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Kyren Williams": {
+      "id": "4430737",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Kendrick Bourne": {
+      "id": "3045523",
+      "name": "Kendrick Bourne",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Luke Farrell": {
+      "id": "4040612",
+      "name": "Luke Farrell",
+      "position": "TE",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Isaac Guerendo": {
+      "id": "4372561",
+      "name": "Isaac Guerendo",
+      "position": "RB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jordan James": {
+      "id": "4685397",
+      "name": "Jordan James",
+      "position": "RB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jauan Jennings": {
+      "id": "3886598",
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Mac Jones": {
+      "id": "4241464",
+      "name": "Mac Jones",
+      "position": "QB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Christian McCaffrey": {
+      "id": "3117251",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Skyy Moore": {
+      "id": "4430191",
+      "name": "Skyy Moore",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Ricky Pearsall": {
+      "id": "4428209",
+      "name": "Ricky Pearsall",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Brock Purdy": {
+      "id": "4361741",
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Demarcus Robinson": {
+      "id": "3043116",
+      "name": "Demarcus Robinson",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Brian Robinson Jr.": {
+      "id": "4241474",
+      "name": "Brian Robinson Jr.",
+      "position": "RB",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jake Tonges": {
+      "id": "4259147",
+      "name": "Jake Tonges",
+      "position": "TE",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Malik Turner": {
+      "id": "3115928",
+      "name": "Malik Turner",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Jordan Watkins": {
+      "id": "4431466",
+      "name": "Jordan Watkins",
+      "position": "WR",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Brayden Willis": {
+      "id": "4360290",
+      "name": "Brayden Willis",
+      "position": "TE",
+      "team": "SF",
+      "sport": "nfl",
+      "status": "Active"
+    },
+    "Judd Anderson": {
+      "id": "5110100",
+      "name": "Judd Anderson",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Alex Bauman": {
+      "id": "4832029",
+      "name": "Alex Bauman",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Carson Beck": {
+      "id": "4430841",
+      "name": "Carson Beck",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Joe Borchers": {
+      "id": "5168278",
+      "name": "Joe Borchers",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "CharMar Brown": {
+      "id": "5156998",
+      "name": "CharMar Brown",
+      "position": "RB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Brennan Burton": {
+      "id": "5226970",
+      "name": "Brennan Burton",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Ny Carr": {
+      "id": "5079374",
+      "name": "Ny Carr",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Hunter Carver": {
+      "id": "5226971",
+      "name": "Hunter Carver",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Jackson Carver": {
+      "id": "4921109",
+      "name": "Jackson Carver",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Andrew Cohen": {
+      "id": "5226972",
+      "name": "Andrew Cohen",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "CJ Daniels": {
+      "id": "4605951",
+      "name": "CJ Daniels",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Mark Fletcher Jr.": {
+      "id": "4870736",
+      "name": "Mark Fletcher Jr.",
+      "position": "RB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Luka Gilbert": {
+      "id": "5141467",
+      "name": "Luka Gilbert",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Vinny Gonzalez": {
+      "id": "5306780",
+      "name": "Vinny Gonzalez",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Luke Hoaglund": {
+      "id": "5295129",
+      "name": "Luke Hoaglund",
+      "position": "RB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Tony Johnson": {
+      "id": "4879499",
+      "name": "Tony Johnson",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Ray Ray Joseph": {
+      "id": "4870770",
+      "name": "Ray Ray Joseph",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Elija Lofton": {
+      "id": "5079503",
+      "name": "Elija Lofton",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Kolby Luna": {
+      "id": "5159950",
+      "name": "Kolby Luna",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Riply Luna": {
+      "id": "5159947",
+      "name": "Riply Luna",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Jordan Lyle": {
+      "id": "5079591",
+      "name": "Jordan Lyle",
+      "position": "RB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Keelan Marion": {
+      "id": "4604004",
+      "name": "Keelan Marion",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Joshua Moore": {
+      "id": "5141593",
+      "name": "Joshua Moore",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Jack Nickel": {
+      "id": "4685484",
+      "name": "Jack Nickel",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Luke Nickel": {
+      "id": "5141605",
+      "name": "Luke Nickel",
+      "position": "QB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Henry Pikus": {
+      "id": "5295128",
+      "name": "Henry Pikus",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Girard Pringle Jr.": {
+      "id": "5164331",
+      "name": "Girard Pringle Jr.",
+      "position": "RB",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Dylan Reiman": {
+      "id": "5226978",
+      "name": "Dylan Reiman",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Chance Robinson": {
+      "id": "5079661",
+      "name": "Chance Robinson",
+      "position": "WR",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Owen Ruskavich": {
+      "id": "5168292",
+      "name": "Owen Ruskavich",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Brock Schott": {
+      "id": "5142604",
+      "name": "Brock Schott",
+      "position": "TE",
+      "team": "MIA",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Andrew Barker": {
+      "id": "5216524",
+      "name": "Andrew Barker",
+      "position": "TE",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Charlie Becker": {
+      "id": "5146735",
+      "name": "Charlie Becker",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Lee Beebe Jr.": {
+      "id": "5091725",
+      "name": "Lee Beebe Jr.",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Jacob Bell": {
+      "id": "5211476",
+      "name": "Jacob Bell",
+      "position": "QB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Kaelon Black": {
+      "id": "4696044",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "James Bomba": {
+      "id": "4565878",
+      "name": "James Bomba",
+      "position": "TE",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "LeBron Bond": {
+      "id": "5209424",
+      "name": "LeBron Bond",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Jonathan Brady": {
+      "id": "4832806",
+      "name": "Jonathan Brady",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Davion Chandler": {
+      "id": "5205460",
+      "name": "Davion Chandler",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Ace Ciongoli": {
+      "id": "5295267",
+      "name": "Ace Ciongoli",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Omar Cooper Jr.": {
+      "id": "4723820",
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Sean Cuono": {
+      "id": "5164320",
+      "name": "Sean Cuono",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Maverick Geske": {
+      "id": "5295266",
+      "name": "Maverick Geske",
+      "position": "QB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Roman Hemby": {
+      "id": "4688835",
+      "name": "Roman Hemby",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Makai Jackson": {
+      "id": "5088336",
+      "name": "Makai Jackson",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Camden Jordan": {
+      "id": "5104822",
+      "name": "Camden Jordan",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Cade Kaiser": {
+      "id": "5295268",
+      "name": "Cade Kaiser",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Myles Kendrick": {
+      "id": "5216964",
+      "name": "Myles Kendrick",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Kyler Kropp": {
+      "id": "5218915",
+      "name": "Kyler Kropp",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Khobie Martin": {
+      "id": "5142140",
+      "name": "Khobie Martin",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Bruno Massel IV": {
+      "id": "5295270",
+      "name": "Bruno Massel IV",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Alberto Mendoza": {
+      "id": "5191162",
+      "name": "Alberto Mendoza",
+      "position": "QB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Fernando Mendoza": {
+      "id": "4837248",
+      "name": "Fernando Mendoza",
+      "position": "QB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Tyler Morris": {
+      "id": "4685464",
+      "name": "Tyler Morris",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Riley Nowakowski": {
+      "id": "4693370",
+      "name": "Riley Nowakowski",
+      "position": "TE",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Elijah Sarratt": {
+      "id": "5088338",
+      "name": "Elijah Sarratt",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Holden Staes": {
+      "id": "4685573",
+      "name": "Holden Staes",
+      "position": "TE",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Hunter Stroud": {
+      "id": "5295269",
+      "name": "Hunter Stroud",
+      "position": "WR",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Blake Thiry": {
+      "id": "5201882",
+      "name": "Blake Thiry",
+      "position": "TE",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    },
+    "Solomon Vanhorse": {
+      "id": "4366640",
+      "name": "Solomon Vanhorse",
+      "position": "RB",
+      "team": "IND",
+      "sport": "ncaa",
+      "status": "Active"
+    }
+  }
+}
