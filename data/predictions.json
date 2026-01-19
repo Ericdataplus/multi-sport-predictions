@@ -1,274 +1,1662 @@
 {
-  "generated_at": "2026-01-18T17:43:55.345966",
+  "generated_at": "2026-01-19T15:37:50.447666",
   "model_version": "v6_behavioral",
   "predictions": {
     "nba": [
       {
-        "game_id": "401810457",
-        "home_team": "Memphis Grizzlies",
-        "away_team": "Orlando Magic",
-        "home_abbrev": "MEM",
-        "away_abbrev": "ORL",
+        "game_id": "401809247",
+        "home_team": "Atlanta Hawks",
+        "away_team": "Milwaukee Bucks",
+        "home_abbrev": "ATL",
+        "away_abbrev": "MIL",
         "predictions": {
           "moneyline": {
-            "pick": "Memphis Grizzlies",
-            "pick_home": true,
-            "confidence": 0.51,
+            "pick": "Milwaukee Bucks",
+            "pick_home": false,
+            "confidence": 0.564,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "MEM -5.5",
-            "pick_home": true,
-            "confidence": 0.51,
-            "spread_line": "MEM -5.5",
+            "pick": "MIL +3.8",
+            "pick_home": false,
+            "confidence": 0.529,
+            "spread_line": "ATL -3.8",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 215",
+            "pick": "OVER 250",
             "pick_over": true,
-            "confidence": 0.617,
-            "total_line": 215,
+            "confidence": 0.646,
+            "total_line": 250,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.193223",
+        "generated_at": "2026-01-19T15:37:48.016966",
         "status": "STATUS_FINAL"
       },
       {
-        "game_id": "401810458",
-        "home_team": "Chicago Bulls",
-        "away_team": "Brooklyn Nets",
-        "home_abbrev": "CHI",
-        "away_abbrev": "BKN",
+        "game_id": "401809248",
+        "home_team": "Cleveland Cavaliers",
+        "away_team": "Oklahoma City Thunder",
+        "home_abbrev": "CLE",
+        "away_abbrev": "OKC",
         "predictions": {
           "moneyline": {
-            "pick": "Chicago Bulls",
-            "pick_home": true,
-            "confidence": 0.716,
+            "pick": "Oklahoma City Thunder",
+            "pick_home": false,
+            "confidence": 0.511,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "CHI -7.8",
-            "pick_home": true,
-            "confidence": 0.603,
-            "spread_line": "CHI -7.8",
+            "pick": "OKC +7.4",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "CLE -7.4",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 255",
+            "pick": "OVER 240",
             "pick_over": true,
-            "confidence": 0.735,
-            "total_line": 255,
+            "confidence": 0.629,
+            "total_line": 240,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.194230",
-        "status": "STATUS_IN_PROGRESS"
+        "generated_at": "2026-01-19T15:37:48.017476",
+        "status": "STATUS_FINAL"
       },
       {
-        "game_id": "401810459",
-        "home_team": "Houston Rockets",
-        "away_team": "New Orleans Pelicans",
-        "home_abbrev": "HOU",
-        "away_abbrev": "NO",
+        "game_id": "401810463",
+        "home_team": "Washington Wizards",
+        "away_team": "LA Clippers",
+        "home_abbrev": "WSH",
+        "away_abbrev": "LAC",
         "predictions": {
           "moneyline": {
-            "pick": "New Orleans Pelicans",
-            "pick_home": false,
-            "confidence": 0.701,
+            "pick": "Washington Wizards",
+            "pick_home": true,
+            "confidence": 0.632,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "NO +7.5",
-            "pick_home": false,
-            "confidence": 0.596,
-            "spread_line": "HOU -7.5",
-            "model_accuracy": 0.734
-          },
-          "total": {
-            "pick": "OVER 235",
-            "pick_over": true,
-            "confidence": 0.641,
-            "total_line": 235,
-            "model_accuracy": 0.622
-          }
-        },
-        "model_version": "v6_behavioral",
-        "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.194736",
-        "status": "STATUS_END_PERIOD"
-      },
-      {
-        "game_id": "401810460",
-        "home_team": "Denver Nuggets",
-        "away_team": "Charlotte Hornets",
-        "home_abbrev": "DEN",
-        "away_abbrev": "CHA",
-        "predictions": {
-          "moneyline": {
-            "pick": "Denver Nuggets",
+            "pick": "WSH -3.2",
             "pick_home": true,
-            "confidence": 0.666,
-            "model_accuracy": 0.654
-          },
-          "spread": {
-            "pick": "DEN -4.9",
-            "pick_home": true,
-            "confidence": 0.578,
-            "spread_line": "DEN -4.9",
+            "confidence": 0.561,
+            "spread_line": "WSH -3.2",
             "model_accuracy": 0.734
           },
           "total": {
             "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.669,
+            "confidence": 0.591,
             "total_line": 225,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.195243",
-        "status": "STATUS_IN_PROGRESS"
+        "generated_at": "2026-01-19T15:37:48.017476",
+        "status": "STATUS_FINAL"
       },
       {
-        "game_id": "401810461",
-        "home_team": "Sacramento Kings",
-        "away_team": "Portland Trail Blazers",
-        "home_abbrev": "SAC",
-        "away_abbrev": "POR",
+        "game_id": "401809249",
+        "home_team": "New York Knicks",
+        "away_team": "Dallas Mavericks",
+        "home_abbrev": "NY",
+        "away_abbrev": "DAL",
         "predictions": {
           "moneyline": {
-            "pick": "Portland Trail Blazers",
+            "pick": "Dallas Mavericks",
             "pick_home": false,
-            "confidence": 0.569,
+            "confidence": 0.573,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "POR +5.9",
+            "pick": "DAL +2.6",
             "pick_home": false,
-            "confidence": 0.531,
-            "spread_line": "POR -1.5",
+            "confidence": 0.533,
+            "spread_line": "NY -2.6",
             "model_accuracy": 0.734
-          },
-          "total": {
-            "pick": "OVER 229.5",
-            "pick_over": true,
-            "confidence": 0.656,
-            "total_line": 229.5,
-            "model_accuracy": 0.622
-          }
-        },
-        "model_version": "v6_behavioral",
-        "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.195243",
-        "status": "STATUS_SCHEDULED"
-      },
-      {
-        "game_id": "401810462",
-        "home_team": "Los Angeles Lakers",
-        "away_team": "Toronto Raptors",
-        "home_abbrev": "LAL",
-        "away_abbrev": "TOR",
-        "predictions": {
-          "moneyline": {
-            "pick": "Los Angeles Lakers",
-            "pick_home": true,
-            "confidence": 0.728,
-            "model_accuracy": 0.654
-          },
-          "spread": {
-            "pick": "LAL -3.7",
-            "pick_home": true,
-            "confidence": 0.61,
-            "spread_line": "LAL -1.5",
-            "model_accuracy": 0.734
-          },
-          "total": {
-            "pick": "OVER 224.5",
-            "pick_over": true,
-            "confidence": 0.666,
-            "total_line": 224.5,
-            "model_accuracy": 0.622
-          }
-        },
-        "model_version": "v6_behavioral",
-        "sport": "nba",
-        "generated_at": "2026-01-18T17:43:53.195792",
-        "status": "STATUS_SCHEDULED"
-      }
-    ],
-    "nfl": [
-      {
-        "game_id": "401772985",
-        "home_team": "Chicago Bears",
-        "away_team": "Los Angeles Rams",
-        "home_abbrev": "CHI",
-        "away_abbrev": "LAR",
-        "predictions": {
-          "moneyline": {
-            "pick": "Chicago Bears",
-            "pick_home": true,
-            "confidence": 0.675,
-            "model_accuracy": 0.651
-          },
-          "spread": {
-            "pick": "CHI -2.5",
-            "pick_home": true,
-            "confidence": 0.578,
-            "spread_line": "CHI -2.5",
-            "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.708,
+            "confidence": 0.721,
             "total_line": 230,
-            "model_accuracy": 0.563
+            "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
-        "sport": "nfl",
-        "generated_at": "2026-01-18T17:43:53.708973",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.017476",
         "status": "STATUS_IN_PROGRESS"
       },
       {
-        "game_id": "401772983",
-        "home_team": "New England Patriots",
-        "away_team": "Houston Texans",
-        "home_abbrev": "NE",
-        "away_abbrev": "HOU",
+        "game_id": "401810466",
+        "home_team": "San Antonio Spurs",
+        "away_team": "Utah Jazz",
+        "home_abbrev": "SA",
+        "away_abbrev": "UTAH",
         "predictions": {
           "moneyline": {
-            "pick": "New England Patriots",
-            "pick_home": true,
-            "confidence": 0.614,
-            "model_accuracy": 0.651
+            "pick": "Utah Jazz",
+            "pick_home": false,
+            "confidence": 0.51,
+            "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "NE -3.9",
+            "pick": "UTAH +7.8",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "SA -7.8",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.669,
+            "total_line": 230,
+            "model_accuracy": 0.622
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.017476",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401810464",
+        "home_team": "Philadelphia 76ers",
+        "away_team": "Indiana Pacers",
+        "home_abbrev": "PHI",
+        "away_abbrev": "IND",
+        "predictions": {
+          "moneyline": {
+            "pick": "Philadelphia 76ers",
             "pick_home": true,
-            "confidence": 0.549,
-            "spread_line": "NE -3.9",
-            "model_accuracy": 0.69
+            "confidence": 0.598,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "PHI -6.5",
+            "pick_home": true,
+            "confidence": 0.545,
+            "spread_line": "PHI -5.5",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 226.5",
+            "pick_over": true,
+            "confidence": 0.734,
+            "total_line": 226.5,
+            "model_accuracy": 0.622
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.018481",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401810465",
+        "home_team": "Brooklyn Nets",
+        "away_team": "Phoenix Suns",
+        "home_abbrev": "BKN",
+        "away_abbrev": "PHX",
+        "predictions": {
+          "moneyline": {
+            "pick": "Brooklyn Nets",
+            "pick_home": true,
+            "confidence": 0.56,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "BKN -2.9",
+            "pick_home": true,
+            "confidence": 0.527,
+            "spread_line": "PHX -9.5",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 214.5",
+            "pick_over": true,
+            "confidence": 0.72,
+            "total_line": 214.5,
+            "model_accuracy": 0.622
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.018481",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401809250",
+        "home_team": "Detroit Pistons",
+        "away_team": "Boston Celtics",
+        "home_abbrev": "DET",
+        "away_abbrev": "BOS",
+        "predictions": {
+          "moneyline": {
+            "pick": "Boston Celtics",
+            "pick_home": false,
+            "confidence": 0.61,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "BOS +2.7",
+            "pick_home": false,
+            "confidence": 0.55,
+            "spread_line": "DET -2.5",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 223.5",
+            "pick_over": true,
+            "confidence": 0.628,
+            "total_line": 223.5,
+            "model_accuracy": 0.622
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.018481",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401810467",
+        "home_team": "Golden State Warriors",
+        "away_team": "Miami Heat",
+        "home_abbrev": "GS",
+        "away_abbrev": "MIA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Golden State Warriors",
+            "pick_home": true,
+            "confidence": 0.617,
+            "model_accuracy": 0.654
+          },
+          "spread": {
+            "pick": "GS -4.5",
+            "pick_home": true,
+            "confidence": 0.553,
+            "spread_line": "GS -4.5",
+            "model_accuracy": 0.734
+          },
+          "total": {
+            "pick": "OVER 239.5",
+            "pick_over": true,
+            "confidence": 0.59,
+            "total_line": 239.5,
+            "model_accuracy": 0.622
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nba",
+        "generated_at": "2026-01-19T15:37:48.018481",
+        "status": "STATUS_SCHEDULED"
+      }
+    ],
+    "ncaa_basketball": [
+      {
+        "game_id": "401828380",
+        "home_team": "George Mason Patriots",
+        "away_team": "George Washington Revolutionaries",
+        "home_abbrev": "GMU",
+        "away_abbrev": "GW",
+        "predictions": {
+          "moneyline": {
+            "pick": "George Mason Patriots",
+            "pick_home": true,
+            "confidence": 0.622,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "GMU -8.1",
+            "pick_home": true,
+            "confidence": 0.554,
+            "spread_line": "GMU -8.1",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.664,
+            "total_line": 230,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.330058",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401827163",
+        "home_team": "Alabama State Hornets",
+        "away_team": "Alabama A&M Bulldogs",
+        "home_abbrev": "ALST",
+        "away_abbrev": "AAMU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Alabama State Hornets",
+            "pick_home": true,
+            "confidence": 0.698,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "ALST -6.2",
+            "pick_home": true,
+            "confidence": 0.592,
+            "spread_line": "ALST -6.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.558,
+            "total_line": 230,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.330058",
+        "status": "STATUS_DELAYED"
+      },
+      {
+        "game_id": "401826865",
+        "home_team": "Dartmouth Big Green",
+        "away_team": "Princeton Tigers",
+        "home_abbrev": "DART",
+        "away_abbrev": "PRIN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Dartmouth Big Green",
+            "pick_home": true,
+            "confidence": 0.669,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "DART -4.3",
+            "pick_home": true,
+            "confidence": 0.577,
+            "spread_line": "DART -4.3",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 210",
+            "pick_over": true,
+            "confidence": 0.568,
+            "total_line": 210,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.331063",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401822907",
+        "home_team": "Marquette Golden Eagles",
+        "away_team": "Providence Friars",
+        "home_abbrev": "MARQ",
+        "away_abbrev": "PROV",
+        "predictions": {
+          "moneyline": {
+            "pick": "Providence Friars",
+            "pick_home": false,
+            "confidence": 0.535,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "PROV +6.4",
+            "pick_home": false,
+            "confidence": 0.515,
+            "spread_line": "MARQ -6.4",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.566,
+            "total_line": 215,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.331568",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401808711",
+        "home_team": "Incarnate Word Cardinals",
+        "away_team": "East Texas A&M Lions",
+        "home_abbrev": "UIW",
+        "away_abbrev": "ETAM",
+        "predictions": {
+          "moneyline": {
+            "pick": "Incarnate Word Cardinals",
+            "pick_home": true,
+            "confidence": 0.68,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UIW -2.6",
+            "pick_home": true,
+            "confidence": 0.582,
+            "spread_line": "UIW -2.6",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.555,
+            "total_line": 235,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.331568",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401812018",
+        "home_team": "Monmouth Hawks",
+        "away_team": "Northeastern Huskies",
+        "home_abbrev": "MONM",
+        "away_abbrev": "NE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Monmouth Hawks",
+            "pick_home": true,
+            "confidence": 0.558,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MONM -7.3",
+            "pick_home": true,
+            "confidence": 0.525,
+            "spread_line": "MONM -7.3",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.724,
+            "total_line": 220,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.332130",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812391",
+        "home_team": "Saint Francis Red Flash",
+        "away_team": "Stonehill Skyhawks",
+        "home_abbrev": "SFPA",
+        "away_abbrev": "STO",
+        "predictions": {
+          "moneyline": {
+            "pick": "Stonehill Skyhawks",
+            "pick_home": false,
+            "confidence": 0.531,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "STO +4.6",
+            "pick_home": false,
+            "confidence": 0.513,
+            "spread_line": "SFPA -4.6",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "UNDER 210",
+            "pick_over": false,
+            "confidence": 0.676,
+            "total_line": 210,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.332130",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812125",
+        "home_team": "UAlbany Great Danes",
+        "away_team": "Vermont Catamounts",
+        "home_abbrev": "UALB",
+        "away_abbrev": "UVM",
+        "predictions": {
+          "moneyline": {
+            "pick": "UAlbany Great Danes",
+            "pick_home": true,
+            "confidence": 0.627,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UALB -4.0",
+            "pick_home": true,
+            "confidence": 0.557,
+            "spread_line": "UALB -4.0",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.617,
+            "total_line": 215,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.332130",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812019",
+        "home_team": "Towson Tigers",
+        "away_team": "Drexel Dragons",
+        "home_abbrev": "TOW",
+        "away_abbrev": "DREX",
+        "predictions": {
+          "moneyline": {
+            "pick": "Towson Tigers",
+            "pick_home": true,
+            "confidence": 0.635,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "TOW -7.9",
+            "pick_home": true,
+            "confidence": 0.561,
+            "spread_line": "TOW -7.9",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 250",
+            "pick_over": true,
+            "confidence": 0.685,
+            "total_line": 250,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.332130",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401823848",
+        "home_team": "Saint Peter's Peacocks",
+        "away_team": "Iona Gaels",
+        "home_abbrev": "SPU",
+        "away_abbrev": "IONA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Saint Peter's Peacocks",
+            "pick_home": true,
+            "confidence": 0.614,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "SPU -7.2",
+            "pick_home": true,
+            "confidence": 0.551,
+            "spread_line": "SPU -7.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.568,
+            "total_line": 215,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.333186",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401823732",
+        "home_team": "Rider Broncs",
+        "away_team": "Sacred Heart Pioneers",
+        "home_abbrev": "RID",
+        "away_abbrev": "SHU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Rider Broncs",
+            "pick_home": true,
+            "confidence": 0.766,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "RID -7.5",
+            "pick_home": true,
+            "confidence": 0.629,
+            "spread_line": "RID -7.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 210",
+            "pick_over": true,
+            "confidence": 0.643,
+            "total_line": 210,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.333186",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401818559",
+        "home_team": "Brown Bears",
+        "away_team": "Cornell Big Red",
+        "home_abbrev": "BRWN",
+        "away_abbrev": "COR",
+        "predictions": {
+          "moneyline": {
+            "pick": "Brown Bears",
+            "pick_home": true,
+            "confidence": 0.613,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "BRWN -6.2",
+            "pick_home": true,
+            "confidence": 0.55,
+            "spread_line": "BRWN -6.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.616,
+            "total_line": 215,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.333720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401818310",
+        "home_team": "Yale Bulldogs",
+        "away_team": "Columbia Lions",
+        "home_abbrev": "YALE",
+        "away_abbrev": "COLU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Yale Bulldogs",
+            "pick_home": true,
+            "confidence": 0.703,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "YALE -4.2",
+            "pick_home": true,
+            "confidence": 0.594,
+            "spread_line": "YALE -4.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.593,
+            "total_line": 235,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.333720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401813426",
+        "home_team": "Siena Saints",
+        "away_team": "Fairfield Stags",
+        "home_abbrev": "SIE",
+        "away_abbrev": "FAIR",
+        "predictions": {
+          "moneyline": {
+            "pick": "Siena Saints",
+            "pick_home": true,
+            "confidence": 0.685,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "SIE -3.7",
+            "pick_home": true,
+            "confidence": 0.585,
+            "spread_line": "SIE -3.7",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.64,
+            "total_line": 215,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.333720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401813387",
+        "home_team": "Niagara Purple Eagles",
+        "away_team": "Mount St. Mary's Mountaineers",
+        "home_abbrev": "NIA",
+        "away_abbrev": "MSM",
+        "predictions": {
+          "moneyline": {
+            "pick": "Mount St. Mary's Mountaineers",
+            "pick_home": false,
+            "confidence": 0.606,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MSM +8.0",
+            "pick_home": false,
+            "confidence": 0.547,
+            "spread_line": "NIA -8.0",
+            "model_accuracy": 0.71
           },
           "total": {
             "pick": "OVER 245",
             "pick_over": true,
-            "confidence": 0.623,
+            "confidence": 0.557,
             "total_line": 245,
-            "model_accuracy": 0.563
+            "model_accuracy": 0.61
           }
         },
         "model_version": "v6_behavioral",
-        "sport": "nfl",
-        "generated_at": "2026-01-18T17:43:53.709512",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
         "status": "STATUS_FINAL"
       },
+      {
+        "game_id": "401813334",
+        "home_team": "Marist Red Foxes",
+        "away_team": "Merrimack Warriors",
+        "home_abbrev": "MRST",
+        "away_abbrev": "MRMK",
+        "predictions": {
+          "moneyline": {
+            "pick": "Marist Red Foxes",
+            "pick_home": true,
+            "confidence": 0.566,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MRST -8.2",
+            "pick_home": true,
+            "confidence": 0.529,
+            "spread_line": "MRST -8.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.686,
+            "total_line": 225,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401813313",
+        "home_team": "Quinnipiac Bobcats",
+        "away_team": "Manhattan Jaspers",
+        "home_abbrev": "QUIN",
+        "away_abbrev": "MAN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Quinnipiac Bobcats",
+            "pick_home": true,
+            "confidence": 0.713,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "QUIN -3.3",
+            "pick_home": true,
+            "confidence": 0.599,
+            "spread_line": "QUIN -3.3",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.65,
+            "total_line": 235,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812654",
+        "home_team": "Mercyhurst Lakers",
+        "away_team": "Central Connecticut Blue Devils",
+        "home_abbrev": "MERC",
+        "away_abbrev": "CCSU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Mercyhurst Lakers",
+            "pick_home": true,
+            "confidence": 0.534,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MERC -5.4",
+            "pick_home": true,
+            "confidence": 0.515,
+            "spread_line": "MERC -5.4",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.691,
+            "total_line": 225,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812588",
+        "home_team": "Harvard Crimson",
+        "away_team": "Pennsylvania Quakers",
+        "home_abbrev": "HARV",
+        "away_abbrev": "PENN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Harvard Crimson",
+            "pick_home": true,
+            "confidence": 0.702,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "HARV -5.2",
+            "pick_home": true,
+            "confidence": 0.594,
+            "spread_line": "HARV -5.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.712,
+            "total_line": 245,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812320",
+        "home_team": "Fairleigh Dickinson Knights",
+        "away_team": "Wagner Seahawks",
+        "home_abbrev": "FDU",
+        "away_abbrev": "WAG",
+        "predictions": {
+          "moneyline": {
+            "pick": "Fairleigh Dickinson Knights",
+            "pick_home": true,
+            "confidence": 0.593,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "FDU -2.6",
+            "pick_home": true,
+            "confidence": 0.541,
+            "spread_line": "FDU -2.6",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.649,
+            "total_line": 220,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812124",
+        "home_team": "Maine Black Bears",
+        "away_team": "New Hampshire Wildcats",
+        "home_abbrev": "ME",
+        "away_abbrev": "UNH",
+        "predictions": {
+          "moneyline": {
+            "pick": "Maine Black Bears",
+            "pick_home": true,
+            "confidence": 0.634,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "ME -4.0",
+            "pick_home": true,
+            "confidence": 0.56,
+            "spread_line": "ME -4.0",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.694,
+            "total_line": 245,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.334258",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812123",
+        "home_team": "Binghamton Bearcats",
+        "away_team": "UMBC Retrievers",
+        "home_abbrev": "BING",
+        "away_abbrev": "UMBC",
+        "predictions": {
+          "moneyline": {
+            "pick": "UMBC Retrievers",
+            "pick_home": false,
+            "confidence": 0.553,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UMBC +7.2",
+            "pick_home": false,
+            "confidence": 0.523,
+            "spread_line": "BING -7.2",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.569,
+            "total_line": 230,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.335820",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812122",
+        "home_team": "NJIT Highlanders",
+        "away_team": "Bryant Bulldogs",
+        "home_abbrev": "NJIT",
+        "away_abbrev": "BRY",
+        "predictions": {
+          "moneyline": {
+            "pick": "NJIT Highlanders",
+            "pick_home": true,
+            "confidence": 0.697,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "NJIT -3.8",
+            "pick_home": true,
+            "confidence": 0.591,
+            "spread_line": "NJIT -3.8",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.728,
+            "total_line": 225,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.336352",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401828381",
+        "home_team": "VCU Rams",
+        "away_team": "Saint Joseph's Hawks",
+        "home_abbrev": "VCU",
+        "away_abbrev": "JOES",
+        "predictions": {
+          "moneyline": {
+            "pick": "VCU Rams",
+            "pick_home": true,
+            "confidence": 0.622,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "VCU -7.3",
+            "pick_home": true,
+            "confidence": 0.554,
+            "spread_line": "VCU -7.3",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.708,
+            "total_line": 220,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.336352",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401827051",
+        "home_team": "Alcorn State Braves",
+        "away_team": "Prairie View A&M Panthers",
+        "home_abbrev": "ALCN",
+        "away_abbrev": "PV",
+        "predictions": {
+          "moneyline": {
+            "pick": "Alcorn State Braves",
+            "pick_home": true,
+            "confidence": 0.683,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "ALCN -7.8",
+            "pick_home": true,
+            "confidence": 0.584,
+            "spread_line": "ALCN -7.8",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.577,
+            "total_line": 230,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.336352",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401812339",
+        "home_team": "Le Moyne Dolphins",
+        "away_team": "Long Island University Sharks",
+        "home_abbrev": "LEM",
+        "away_abbrev": "LIU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Long Island University Sharks",
+            "pick_home": false,
+            "confidence": 0.647,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "LIU +6.4",
+            "pick_home": false,
+            "confidence": 0.566,
+            "spread_line": "LEM -6.4",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.694,
+            "total_line": 240,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.336352",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401830241",
+        "home_team": "Howard Bison",
+        "away_team": "Morehouse Maroon Tigers",
+        "home_abbrev": "HOW",
+        "away_abbrev": "MRHO",
+        "predictions": {
+          "moneyline": {
+            "pick": "Howard Bison",
+            "pick_home": true,
+            "confidence": 0.611,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "HOW -7.9",
+            "pick_home": true,
+            "confidence": 0.549,
+            "spread_line": "HOW -7.9",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.635,
+            "total_line": 225,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.337357",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401808878",
+        "home_team": "Texas A&M-Corpus Christi Islanders",
+        "away_team": "McNeese Cowboys",
+        "home_abbrev": "AMCC",
+        "away_abbrev": "MCN",
+        "predictions": {
+          "moneyline": {
+            "pick": "McNeese Cowboys",
+            "pick_home": false,
+            "confidence": 0.588,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MCN +5.4",
+            "pick_home": false,
+            "confidence": 0.539,
+            "spread_line": "AMCC -5.4",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.707,
+            "total_line": 230,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.337357",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401827141",
+        "home_team": "Arkansas-Pine Bluff Golden Lions",
+        "away_team": "Bethune-Cookman Wildcats",
+        "home_abbrev": "UAPB",
+        "away_abbrev": "BCU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Arkansas-Pine Bluff Golden Lions",
+            "pick_home": true,
+            "confidence": 0.85,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UAPB -6.8",
+            "pick_home": true,
+            "confidence": 0.71,
+            "spread_line": "UAPB -6.8",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.573,
+            "total_line": 235,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.339367",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401828727",
+        "home_team": "Norfolk State Spartans",
+        "away_team": "Elizabeth City State Vikings",
+        "home_abbrev": "NORF",
+        "away_abbrev": "ECSU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Elizabeth City State Vikings",
+            "pick_home": false,
+            "confidence": 0.563,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "ECSU +8.1",
+            "pick_home": false,
+            "confidence": 0.528,
+            "spread_line": "NORF -8.1",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.565,
+            "total_line": 235,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.339900",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401822348",
+        "home_team": "Chicago State Cougars",
+        "away_team": "New Haven Chargers",
+        "home_abbrev": "CHST",
+        "away_abbrev": "NHVN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Chicago State Cougars",
+            "pick_home": true,
+            "confidence": 0.521,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "CHST -3.2",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "CHST -1.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "UNDER 129.5",
+            "pick_over": false,
+            "confidence": 0.636,
+            "total_line": 129.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.340683",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401820199",
+        "home_team": "Lehigh Mountain Hawks",
+        "away_team": "Loyola Maryland Greyhounds",
+        "home_abbrev": "LEH",
+        "away_abbrev": "L-MD",
+        "predictions": {
+          "moneyline": {
+            "pick": "Lehigh Mountain Hawks",
+            "pick_home": true,
+            "confidence": 0.779,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "LEH -2.7",
+            "pick_home": true,
+            "confidence": 0.637,
+            "spread_line": "LEH -3.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 149.5",
+            "pick_over": true,
+            "confidence": 0.726,
+            "total_line": 149.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.341111",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808959",
+        "home_team": "UT Rio Grande Valley Vaqueros",
+        "away_team": "SE Louisiana Lions",
+        "home_abbrev": "RGV",
+        "away_abbrev": "SELA",
+        "predictions": {
+          "moneyline": {
+            "pick": "UT Rio Grande Valley Vaqueros",
+            "pick_home": true,
+            "confidence": 0.524,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "RGV -6.5",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "RGV -4.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 135.5",
+            "pick_over": true,
+            "confidence": 0.605,
+            "total_line": 135.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.341617",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808924",
+        "home_team": "Nicholls Colonels",
+        "away_team": "Stephen F. Austin Lumberjacks",
+        "home_abbrev": "NICH",
+        "away_abbrev": "SFA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Nicholls Colonels",
+            "pick_home": true,
+            "confidence": 0.689,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "NICH -7.6",
+            "pick_home": true,
+            "confidence": 0.587,
+            "spread_line": "SFA -4.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 144.5",
+            "pick_over": true,
+            "confidence": 0.688,
+            "total_line": 144.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.341617",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401830344",
+        "home_team": "Mississippi Valley State Delta Devils",
+        "away_team": "Florida A&M Rattlers",
+        "home_abbrev": "MVSU",
+        "away_abbrev": "FAMU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Mississippi Valley State Delta Devils",
+            "pick_home": true,
+            "confidence": 0.606,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MVSU -6.4",
+            "pick_home": true,
+            "confidence": 0.547,
+            "spread_line": "FAMU -11.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 139.5",
+            "pick_over": true,
+            "confidence": 0.635,
+            "total_line": 139.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.341617",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401828664",
+        "home_team": "Jackson State Tigers",
+        "away_team": "Texas Southern Tigers",
+        "home_abbrev": "JKST",
+        "away_abbrev": "TXSO",
+        "predictions": {
+          "moneyline": {
+            "pick": "Jackson State Tigers",
+            "pick_home": true,
+            "confidence": 0.601,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "JKST -6.9",
+            "pick_home": true,
+            "confidence": 0.545,
+            "spread_line": "JKST -2.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 153.5",
+            "pick_over": true,
+            "confidence": 0.723,
+            "total_line": 153.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.341617",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808940",
+        "home_team": "Houston Christian Huskies",
+        "away_team": "Northwestern State Demons",
+        "home_abbrev": "HCU",
+        "away_abbrev": "NWST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Houston Christian Huskies",
+            "pick_home": true,
+            "confidence": 0.523,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "HCU -5.6",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "HCU -2.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 139.5",
+            "pick_over": true,
+            "confidence": 0.724,
+            "total_line": 139.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.342623",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808908",
+        "home_team": "New Orleans Privateers",
+        "away_team": "Lamar Cardinals",
+        "home_abbrev": "UNO",
+        "away_abbrev": "LAM",
+        "predictions": {
+          "moneyline": {
+            "pick": "New Orleans Privateers",
+            "pick_home": true,
+            "confidence": 0.568,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UNO -7.4",
+            "pick_home": true,
+            "confidence": 0.53,
+            "spread_line": "LAM -1.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 144.5",
+            "pick_over": true,
+            "confidence": 0.646,
+            "total_line": 144.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.343128",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808515",
+        "home_team": "Northern Colorado Bears",
+        "away_team": "Montana State Bobcats",
+        "home_abbrev": "UNCO",
+        "away_abbrev": "MTST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Northern Colorado Bears",
+            "pick_home": true,
+            "confidence": 0.526,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "UNCO -5.3",
+            "pick_home": true,
+            "confidence": 0.511,
+            "spread_line": "UNCO -3.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 153.5",
+            "pick_over": true,
+            "confidence": 0.609,
+            "total_line": 153.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.343128",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401808504",
+        "home_team": "Northern Arizona Lumberjacks",
+        "away_team": "Montana Grizzlies",
+        "home_abbrev": "NAU",
+        "away_abbrev": "MONT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Montana Grizzlies",
+            "pick_home": false,
+            "confidence": 0.62,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "MONT +5.2",
+            "pick_home": false,
+            "confidence": 0.553,
+            "spread_line": "MONT -3.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 146.5",
+            "pick_over": true,
+            "confidence": 0.689,
+            "total_line": 146.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.343128",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401812023",
+        "home_team": "Hampton Pirates",
+        "away_team": "North Carolina A&T Aggies",
+        "home_abbrev": "HAMP",
+        "away_abbrev": "NCAT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Hampton Pirates",
+            "pick_home": true,
+            "confidence": 0.797,
+            "model_accuracy": 0.65
+          },
+          "spread": {
+            "pick": "HAMP -6.1",
+            "pick_home": true,
+            "confidence": 0.65,
+            "spread_line": "HAMP -5.5",
+            "model_accuracy": 0.71
+          },
+          "total": {
+            "pick": "OVER 143.5",
+            "pick_over": true,
+            "confidence": 0.594,
+            "total_line": 143.5,
+            "model_accuracy": 0.61
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_basketball",
+        "generated_at": "2026-01-19T15:37:48.343644",
+        "status": "STATUS_SCHEDULED"
+      }
+    ],
+    "nfl": [
       {
         "game_id": "401772982",
         "home_team": "Denver Broncos",
@@ -279,27 +1667,27 @@
           "moneyline": {
             "pick": "Buffalo Bills",
             "pick_home": false,
-            "confidence": 0.547,
+            "confidence": 0.548,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "BUF +6.0",
+            "pick": "BUF +7.4",
             "pick_home": false,
             "confidence": 0.52,
-            "spread_line": "DEN -6.0",
+            "spread_line": "DEN -7.4",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "UNDER 210",
-            "pick_over": false,
-            "confidence": 0.629,
-            "total_line": 210,
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.625,
+            "total_line": 230,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2026-01-18T17:43:53.709512",
+        "generated_at": "2026-01-19T15:37:48.676720",
         "status": "STATUS_FINAL"
       },
       {
@@ -312,129 +1700,2210 @@
           "moneyline": {
             "pick": "Seattle Seahawks",
             "pick_home": true,
-            "confidence": 0.78,
+            "confidence": 0.557,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "SEA -6.7",
+            "pick": "SEA -4.5",
             "pick_home": true,
-            "confidence": 0.634,
-            "spread_line": "SEA -6.7",
+            "confidence": 0.524,
+            "spread_line": "SEA -4.5",
             "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.606,
+            "confidence": 0.662,
             "total_line": 235,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2026-01-18T17:43:53.710521",
-        "status": "STATUS_FINAL"
-      }
-    ],
-    "nhl": [
-      {
-        "game_id": "401803118",
-        "home_team": "Dallas Stars",
-        "away_team": "Tampa Bay Lightning",
-        "home_abbrev": "DAL",
-        "away_abbrev": "TB",
-        "predictions": {
-          "moneyline": {
-            "pick": "Tampa Bay Lightning",
-            "pick_home": false,
-            "confidence": 0.51,
-            "model_accuracy": 0.72
-          },
-          "spread": {
-            "pick": "TB +4.8",
-            "pick_home": false,
-            "confidence": 0.51,
-            "spread_line": "DAL -4.8",
-            "model_accuracy": 0.674
-          },
-          "total": {
-            "pick": "OVER 255",
-            "pick_over": true,
-            "confidence": 0.729,
-            "total_line": 255,
-            "model_accuracy": 0.601
-          }
-        },
-        "model_version": "v6_behavioral",
-        "sport": "nhl",
-        "generated_at": "2026-01-18T17:43:54.217967",
+        "generated_at": "2026-01-19T15:37:48.676720",
         "status": "STATUS_FINAL"
       },
       {
-        "game_id": "401803119",
-        "home_team": "Detroit Red Wings",
-        "away_team": "Ottawa Senators",
-        "home_abbrev": "DET",
-        "away_abbrev": "OTT",
+        "game_id": "401772983",
+        "home_team": "New England Patriots",
+        "away_team": "Houston Texans",
+        "home_abbrev": "NE",
+        "away_abbrev": "HOU",
         "predictions": {
           "moneyline": {
-            "pick": "Detroit Red Wings",
-            "pick_home": true,
-            "confidence": 0.814,
-            "model_accuracy": 0.72
+            "pick": "Houston Texans",
+            "pick_home": false,
+            "confidence": 0.51,
+            "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "DET -3.9",
-            "pick_home": true,
-            "confidence": 0.633,
-            "spread_line": "DET -3.9",
-            "model_accuracy": 0.674
+            "pick": "HOU +6.8",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "NE -6.8",
+            "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 215",
             "pick_over": true,
-            "confidence": 0.691,
+            "confidence": 0.629,
             "total_line": 215,
-            "model_accuracy": 0.601
+            "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
-        "sport": "nhl",
-        "generated_at": "2026-01-18T17:43:54.217967",
+        "sport": "nfl",
+        "generated_at": "2026-01-19T15:37:48.676720",
         "status": "STATUS_FINAL"
       },
       {
-        "game_id": "401803120",
-        "home_team": "Edmonton Oilers",
-        "away_team": "St. Louis Blues",
-        "home_abbrev": "EDM",
-        "away_abbrev": "STL",
+        "game_id": "401772985",
+        "home_team": "Chicago Bears",
+        "away_team": "Los Angeles Rams",
+        "home_abbrev": "CHI",
+        "away_abbrev": "LAR",
         "predictions": {
           "moneyline": {
-            "pick": "St. Louis Blues",
-            "pick_home": false,
-            "confidence": 0.741,
-            "model_accuracy": 0.72
+            "pick": "Chicago Bears",
+            "pick_home": true,
+            "confidence": 0.511,
+            "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "STL +3.2",
+            "pick": "CHI -6.7",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "CHI -6.7",
+            "model_accuracy": 0.69
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.608,
+            "total_line": 235,
+            "model_accuracy": 0.563
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nfl",
+        "generated_at": "2026-01-19T15:37:48.676720",
+        "status": "STATUS_FINAL"
+      }
+    ],
+    "ncaa_football": [
+      {
+        "game_id": "401769076",
+        "home_team": "Indiana Hoosiers",
+        "away_team": "Miami Hurricanes",
+        "home_abbrev": "IU",
+        "away_abbrev": "MIA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Indiana Hoosiers",
+            "pick_home": true,
+            "confidence": 0.637,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "IU -2.9",
+            "pick_home": true,
+            "confidence": 0.56,
+            "spread_line": "IU -7.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 46.5",
+            "pick_over": false,
+            "confidence": 0.699,
+            "total_line": 46.5,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.016062",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401778123",
+        "home_team": "Prairie View A&M Panthers",
+        "away_team": "South Carolina State Bulldogs",
+        "home_abbrev": "PV",
+        "away_abbrev": "SCST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Prairie View A&M Panthers",
+            "pick_home": true,
+            "confidence": 0.627,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "PV -2.9",
+            "pick_home": true,
+            "confidence": 0.555,
+            "spread_line": "PV -2.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.713,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.016062",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401833986",
+        "home_team": "Tarleton State Texans",
+        "away_team": "Villanova Wildcats",
+        "home_abbrev": "TAR",
+        "away_abbrev": "VILL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Tarleton State Texans",
+            "pick_home": true,
+            "confidence": 0.677,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TAR -7.7",
+            "pick_home": true,
+            "confidence": 0.579,
+            "spread_line": "TAR -7.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.551,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.016062",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401762521",
+        "home_team": "Navy Midshipmen",
+        "away_team": "Army Black Knights",
+        "home_abbrev": "NAVY",
+        "away_abbrev": "ARMY",
+        "predictions": {
+          "moneyline": {
+            "pick": "Navy Midshipmen",
+            "pick_home": true,
+            "confidence": 0.544,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "NAVY -8.4",
+            "pick_home": true,
+            "confidence": 0.519,
+            "spread_line": "NAVY -8.4",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.653,
+            "total_line": 245,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.016062",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401833987",
+        "home_team": "Montana Grizzlies",
+        "away_team": "South Dakota Coyotes",
+        "home_abbrev": "MONT",
+        "away_abbrev": "SDAK",
+        "predictions": {
+          "moneyline": {
+            "pick": "South Dakota Coyotes",
             "pick_home": false,
-            "confidence": 0.597,
-            "spread_line": "EDM -3.2",
-            "model_accuracy": 0.674
+            "confidence": 0.601,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "SDAK +6.5",
+            "pick_home": false,
+            "confidence": 0.544,
+            "spread_line": "MONT -6.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.6,
+            "total_line": 220,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.016062",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401836219",
+        "home_team": "UC Davis Aggies",
+        "away_team": "Illinois State Redbirds",
+        "home_abbrev": "UCD",
+        "away_abbrev": "ILST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Illinois State Redbirds",
+            "pick_home": false,
+            "confidence": 0.558,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ILST +5.0",
+            "pick_home": false,
+            "confidence": 0.525,
+            "spread_line": "UCD -5.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.62,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017094",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778302",
+        "home_team": "Washington Huskies",
+        "away_team": "Boise State Broncos",
+        "home_abbrev": "WASH",
+        "away_abbrev": "BOIS",
+        "predictions": {
+          "moneyline": {
+            "pick": "Boise State Broncos",
+            "pick_home": false,
+            "confidence": 0.518,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "BOIS +3.8",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "WASH -3.8",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.707,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017094",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778303",
+        "home_team": "Jacksonville State Gamecocks",
+        "away_team": "Troy Trojans",
+        "home_abbrev": "JVST",
+        "away_abbrev": "TROY",
+        "predictions": {
+          "moneyline": {
+            "pick": "Troy Trojans",
+            "pick_home": false,
+            "confidence": 0.531,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TROY +5.9",
+            "pick_home": false,
+            "confidence": 0.513,
+            "spread_line": "JVST -5.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.588,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778304",
+        "home_team": "South Florida Bulls",
+        "away_team": "Old Dominion Monarchs",
+        "home_abbrev": "USF",
+        "away_abbrev": "ODU",
+        "predictions": {
+          "moneyline": {
+            "pick": "South Florida Bulls",
+            "pick_home": true,
+            "confidence": 0.845,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "USF -6.9",
+            "pick_home": true,
+            "confidence": 0.682,
+            "spread_line": "USF -6.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.722,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778305",
+        "home_team": "Delaware Blue Hens",
+        "away_team": "Louisiana Ragin' Cajuns",
+        "home_abbrev": "DEL",
+        "away_abbrev": "UL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Delaware Blue Hens",
+            "pick_home": true,
+            "confidence": 0.654,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "DEL -7.7",
+            "pick_home": true,
+            "confidence": 0.568,
+            "spread_line": "DEL -7.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.614,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401838053",
+        "home_team": "Arkansas State Red Wolves",
+        "away_team": "Missouri State Bears",
+        "home_abbrev": "ARST",
+        "away_abbrev": "MOST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Missouri State Bears",
+            "pick_home": false,
+            "confidence": 0.543,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MOST +4.7",
+            "pick_home": false,
+            "confidence": 0.518,
+            "spread_line": "ARST -4.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 210",
+            "pick_over": false,
+            "confidence": 0.645,
+            "total_line": 210,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401779840",
+        "home_team": "Oklahoma Sooners",
+        "away_team": "Alabama Crimson Tide",
+        "home_abbrev": "OU",
+        "away_abbrev": "ALA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Oklahoma Sooners",
+            "pick_home": true,
+            "confidence": 0.654,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "OU -6.5",
+            "pick_home": true,
+            "confidence": 0.568,
+            "spread_line": "OU -6.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 205",
+            "pick_over": false,
+            "confidence": 0.637,
+            "total_line": 205,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778306",
+        "home_team": "Western Michigan Broncos",
+        "away_team": "Kennesaw State Owls",
+        "home_abbrev": "WMU",
+        "away_abbrev": "KENN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Western Michigan Broncos",
+            "pick_home": true,
+            "confidence": 0.824,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "WMU -3.0",
+            "pick_home": true,
+            "confidence": 0.665,
+            "spread_line": "WMU -3.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.626,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.017610",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778307",
+        "home_team": "NC State Wolfpack",
+        "away_team": "Memphis Tigers",
+        "home_abbrev": "NCSU",
+        "away_abbrev": "MEM",
+        "predictions": {
+          "moneyline": {
+            "pick": "NC State Wolfpack",
+            "pick_home": true,
+            "confidence": 0.546,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "NCSU -4.5",
+            "pick_home": true,
+            "confidence": 0.52,
+            "spread_line": "NCSU -4.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.675,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.018614",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401779843",
+        "home_team": "Oregon Ducks",
+        "away_team": "James Madison Dukes",
+        "home_abbrev": "ORE",
+        "away_abbrev": "JMU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Oregon Ducks",
+            "pick_home": true,
+            "confidence": 0.57,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ORE -7.0",
+            "pick_home": true,
+            "confidence": 0.53,
+            "spread_line": "ORE -7.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.719,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.018614",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401779842",
+        "home_team": "Ole Miss Rebels",
+        "away_team": "Tulane Green Wave",
+        "home_abbrev": "MISS",
+        "away_abbrev": "TULN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Ole Miss Rebels",
+            "pick_home": true,
+            "confidence": 0.605,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MISS -4.5",
+            "pick_home": true,
+            "confidence": 0.545,
+            "spread_line": "MISS -4.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.546,
+            "total_line": 235,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.019119",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401779841",
+        "home_team": "Texas A&M Aggies",
+        "away_team": "Miami Hurricanes",
+        "home_abbrev": "TA&M",
+        "away_abbrev": "MIA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Texas A&M Aggies",
+            "pick_home": true,
+            "confidence": 0.841,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TA&M -7.8",
+            "pick_home": true,
+            "confidence": 0.679,
+            "spread_line": "TA&M -7.8",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.617,
+            "total_line": 220,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.019119",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401833989",
+        "home_team": "Montana State Bobcats",
+        "away_team": "Montana Grizzlies",
+        "home_abbrev": "MTST",
+        "away_abbrev": "MONT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Montana State Bobcats",
+            "pick_home": true,
+            "confidence": 0.707,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MTST -8.4",
+            "pick_home": true,
+            "confidence": 0.594,
+            "spread_line": "MTST -8.4",
+            "model_accuracy": 0.68
           },
           "total": {
             "pick": "OVER 230",
             "pick_over": true,
             "confidence": 0.662,
             "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.019631",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401833990",
+        "home_team": "Villanova Wildcats",
+        "away_team": "Illinois State Redbirds",
+        "home_abbrev": "VILL",
+        "away_abbrev": "ILST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Villanova Wildcats",
+            "pick_home": true,
+            "confidence": 0.526,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "VILL -2.6",
+            "pick_home": true,
+            "confidence": 0.511,
+            "spread_line": "VILL -2.6",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.659,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.020200",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778308",
+        "home_team": "Utah State Aggies",
+        "away_team": "Washington State Cougars",
+        "home_abbrev": "USU",
+        "away_abbrev": "WSU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Utah State Aggies",
+            "pick_home": true,
+            "confidence": 0.547,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "USU -3.8",
+            "pick_home": true,
+            "confidence": 0.52,
+            "spread_line": "USU -3.8",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 210",
+            "pick_over": false,
+            "confidence": 0.606,
+            "total_line": 210,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.021206",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778309",
+        "home_team": "Louisville Cardinals",
+        "away_team": "Toledo Rockets",
+        "home_abbrev": "LOU",
+        "away_abbrev": "TOL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Toledo Rockets",
+            "pick_home": false,
+            "confidence": 0.6,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TOL +7.3",
+            "pick_home": false,
+            "confidence": 0.543,
+            "spread_line": "LOU -7.3",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.637,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.021206",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778310",
+        "home_team": "Southern Miss Golden Eagles",
+        "away_team": "Western Kentucky Hilltoppers",
+        "home_abbrev": "USM",
+        "away_abbrev": "WKU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Southern Miss Golden Eagles",
+            "pick_home": true,
+            "confidence": 0.559,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "USM -2.7",
+            "pick_home": true,
+            "confidence": 0.525,
+            "spread_line": "USM -2.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.646,
+            "total_line": 220,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.021206",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778311",
+        "home_team": "Ohio Bobcats",
+        "away_team": "UNLV Rebels",
+        "home_abbrev": "OHIO",
+        "away_abbrev": "UNLV",
+        "predictions": {
+          "moneyline": {
+            "pick": "Ohio Bobcats",
+            "pick_home": true,
+            "confidence": 0.533,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "OHIO -5.0",
+            "pick_home": true,
+            "confidence": 0.514,
+            "spread_line": "OHIO -5.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.581,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.021206",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778312",
+        "home_team": "Hawai'i Rainbow Warriors",
+        "away_team": "California Golden Bears",
+        "home_abbrev": "HAW",
+        "away_abbrev": "CAL",
+        "predictions": {
+          "moneyline": {
+            "pick": "Hawai'i Rainbow Warriors",
+            "pick_home": true,
+            "confidence": 0.538,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "HAW -3.6",
+            "pick_home": true,
+            "confidence": 0.516,
+            "spread_line": "HAW -3.6",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 250",
+            "pick_over": true,
+            "confidence": 0.654,
+            "total_line": 250,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022205",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778313",
+        "home_team": "Northwestern Wildcats",
+        "away_team": "Central Michigan Chippewas",
+        "home_abbrev": "NU",
+        "away_abbrev": "CMU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Northwestern Wildcats",
+            "pick_home": true,
+            "confidence": 0.667,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "NU -6.3",
+            "pick_home": true,
+            "confidence": 0.574,
+            "spread_line": "NU -6.3",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 205",
+            "pick_over": false,
+            "confidence": 0.712,
+            "total_line": 205,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022205",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778314",
+        "home_team": "Minnesota Golden Gophers",
+        "away_team": "New Mexico Lobos",
+        "home_abbrev": "MINN",
+        "away_abbrev": "UNM",
+        "predictions": {
+          "moneyline": {
+            "pick": "Minnesota Golden Gophers",
+            "pick_home": true,
+            "confidence": 0.523,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MINN -6.5",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "MINN -6.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.553,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022711",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778315",
+        "home_team": "UTSA Roadrunners",
+        "away_team": "Florida International Panthers",
+        "home_abbrev": "UTSA",
+        "away_abbrev": "FIU",
+        "predictions": {
+          "moneyline": {
+            "pick": "UTSA Roadrunners",
+            "pick_home": true,
+            "confidence": 0.622,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "UTSA -6.6",
+            "pick_home": true,
+            "confidence": 0.553,
+            "spread_line": "UTSA -6.6",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.579,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022711",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778319",
+        "home_team": "BYU Cougars",
+        "away_team": "Georgia Tech Yellow Jackets",
+        "home_abbrev": "BYU",
+        "away_abbrev": "GT",
+        "predictions": {
+          "moneyline": {
+            "pick": "BYU Cougars",
+            "pick_home": true,
+            "confidence": 0.581,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "BYU -3.2",
+            "pick_home": true,
+            "confidence": 0.535,
+            "spread_line": "BYU -3.2",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.596,
+            "total_line": 220,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022711",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778322",
+        "home_team": "Missouri Tigers",
+        "away_team": "Virginia Cavaliers",
+        "home_abbrev": "MIZ",
+        "away_abbrev": "UVA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Missouri Tigers",
+            "pick_home": true,
+            "confidence": 0.668,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MIZ -3.1",
+            "pick_home": true,
+            "confidence": 0.575,
+            "spread_line": "MIZ -3.1",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.612,
+            "total_line": 235,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022711",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778323",
+        "home_team": "Houston Cougars",
+        "away_team": "LSU Tigers",
+        "home_abbrev": "HOU",
+        "away_abbrev": "LSU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Houston Cougars",
+            "pick_home": true,
+            "confidence": 0.646,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "HOU -4.5",
+            "pick_home": true,
+            "confidence": 0.564,
+            "spread_line": "HOU -4.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.594,
+            "total_line": 235,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.022711",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778321",
+        "home_team": "San Diego State Aztecs",
+        "away_team": "North Texas Mean Green",
+        "home_abbrev": "SDSU",
+        "away_abbrev": "UNT",
+        "predictions": {
+          "moneyline": {
+            "pick": "North Texas Mean Green",
+            "pick_home": false,
+            "confidence": 0.51,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "UNT +6.2",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "SDSU -6.2",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 255",
+            "pick_over": true,
+            "confidence": 0.64,
+            "total_line": 255,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.023720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778316",
+        "home_team": "East Carolina Pirates",
+        "away_team": "Pittsburgh Panthers",
+        "home_abbrev": "ECU",
+        "away_abbrev": "PITT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Pittsburgh Panthers",
+            "pick_home": false,
+            "confidence": 0.514,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "PITT +4.9",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "ECU -4.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.704,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.023720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778317",
+        "home_team": "Clemson Tigers",
+        "away_team": "Penn State Nittany Lions",
+        "home_abbrev": "CLEM",
+        "away_abbrev": "PSU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Clemson Tigers",
+            "pick_home": true,
+            "confidence": 0.636,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "CLEM -2.7",
+            "pick_home": true,
+            "confidence": 0.559,
+            "spread_line": "CLEM -2.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.718,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.023720",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778318",
+        "home_team": "Army Black Knights",
+        "away_team": "UConn Huskies",
+        "home_abbrev": "ARMY",
+        "away_abbrev": "CONN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Army Black Knights",
+            "pick_home": true,
+            "confidence": 0.616,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ARMY -8.0",
+            "pick_home": true,
+            "confidence": 0.55,
+            "spread_line": "ARMY -8.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.608,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.024866",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778320",
+        "home_team": "Fresno State Bulldogs",
+        "away_team": "Miami (OH) RedHawks",
+        "home_abbrev": "FRES",
+        "away_abbrev": "M-OH",
+        "predictions": {
+          "moneyline": {
+            "pick": "Miami (OH) RedHawks",
+            "pick_home": false,
+            "confidence": 0.584,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "M-OH +3.3",
+            "pick_home": false,
+            "confidence": 0.536,
+            "spread_line": "FRES -3.3",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.589,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.024866",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778324",
+        "home_team": "App State Mountaineers",
+        "away_team": "Georgia Southern Eagles",
+        "home_abbrev": "APP",
+        "away_abbrev": "GASO",
+        "predictions": {
+          "moneyline": {
+            "pick": "App State Mountaineers",
+            "pick_home": true,
+            "confidence": 0.623,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "APP -4.6",
+            "pick_home": true,
+            "confidence": 0.554,
+            "spread_line": "APP -4.6",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 255",
+            "pick_over": true,
+            "confidence": 0.693,
+            "total_line": 255,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.024866",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778327",
+        "home_team": "TCU Horned Frogs",
+        "away_team": "USC Trojans",
+        "home_abbrev": "TCU",
+        "away_abbrev": "USC",
+        "predictions": {
+          "moneyline": {
+            "pick": "TCU Horned Frogs",
+            "pick_home": true,
+            "confidence": 0.762,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TCU -7.0",
+            "pick_home": true,
+            "confidence": 0.624,
+            "spread_line": "TCU -7.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 220",
+            "pick_over": true,
+            "confidence": 0.644,
+            "total_line": 220,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.025873",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778325",
+        "home_team": "Louisiana Tech Bulldogs",
+        "away_team": "Coastal Carolina Chanticleers",
+        "home_abbrev": "LT",
+        "away_abbrev": "CCU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Louisiana Tech Bulldogs",
+            "pick_home": true,
+            "confidence": 0.571,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "LT -3.9",
+            "pick_home": true,
+            "confidence": 0.53,
+            "spread_line": "LT -3.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.651,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.025873",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778326",
+        "home_team": "Illinois Fighting Illini",
+        "away_team": "Tennessee Volunteers",
+        "home_abbrev": "ILL",
+        "away_abbrev": "TENN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Illinois Fighting Illini",
+            "pick_home": true,
+            "confidence": 0.692,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ILL -3.5",
+            "pick_home": true,
+            "confidence": 0.586,
+            "spread_line": "ILL -3.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.638,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.025873",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769070",
+        "home_team": "Ohio State Buckeyes",
+        "away_team": "Miami Hurricanes",
+        "home_abbrev": "OSU",
+        "away_abbrev": "MIA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Ohio State Buckeyes",
+            "pick_home": true,
+            "confidence": 0.59,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "OSU -3.0",
+            "pick_home": true,
+            "confidence": 0.539,
+            "spread_line": "OSU -3.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "UNDER 205",
+            "pick_over": false,
+            "confidence": 0.703,
+            "total_line": 205,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.025873",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778330",
+        "home_team": "Texas Longhorns",
+        "away_team": "Michigan Wolverines",
+        "home_abbrev": "TEX",
+        "away_abbrev": "MICH",
+        "predictions": {
+          "moneyline": {
+            "pick": "Texas Longhorns",
+            "pick_home": true,
+            "confidence": 0.689,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TEX -8.5",
+            "pick_home": true,
+            "confidence": 0.585,
+            "spread_line": "TEX -8.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.558,
+            "total_line": 245,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.025873",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778328",
+        "home_team": "Vanderbilt Commodores",
+        "away_team": "Iowa Hawkeyes",
+        "home_abbrev": "VAN",
+        "away_abbrev": "IOWA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Vanderbilt Commodores",
+            "pick_home": true,
+            "confidence": 0.628,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "VAN -2.5",
+            "pick_home": true,
+            "confidence": 0.556,
+            "spread_line": "VAN -2.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.714,
+            "total_line": 245,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.027125",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778331",
+        "home_team": "Utah Utes",
+        "away_team": "Nebraska Cornhuskers",
+        "home_abbrev": "UTAH",
+        "away_abbrev": "NEB",
+        "predictions": {
+          "moneyline": {
+            "pick": "Utah Utes",
+            "pick_home": true,
+            "confidence": 0.65,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "UTAH -5.2",
+            "pick_home": true,
+            "confidence": 0.566,
+            "spread_line": "UTAH -5.2",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.626,
+            "total_line": 230,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.027125",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778329",
+        "home_team": "Duke Blue Devils",
+        "away_team": "Arizona State Sun Devils",
+        "home_abbrev": "DUKE",
+        "away_abbrev": "ASU",
+        "predictions": {
+          "moneyline": {
+            "pick": "Duke Blue Devils",
+            "pick_home": true,
+            "confidence": 0.689,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "DUKE -3.5",
+            "pick_home": true,
+            "confidence": 0.585,
+            "spread_line": "DUKE -3.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.671,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.027125",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769072",
+        "home_team": "Indiana Hoosiers",
+        "away_team": "Alabama Crimson Tide",
+        "home_abbrev": "IU",
+        "away_abbrev": "ALA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Indiana Hoosiers",
+            "pick_home": true,
+            "confidence": 0.623,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "IU -3.8",
+            "pick_home": true,
+            "confidence": 0.554,
+            "spread_line": "IU -3.8",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 210",
+            "pick_over": true,
+            "confidence": 0.602,
+            "total_line": 210,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.027674",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769073",
+        "home_team": "Georgia Bulldogs",
+        "away_team": "Ole Miss Rebels",
+        "home_abbrev": "UGA",
+        "away_abbrev": "MISS",
+        "predictions": {
+          "moneyline": {
+            "pick": "Georgia Bulldogs",
+            "pick_home": true,
+            "confidence": 0.566,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "UGA -3.0",
+            "pick_home": true,
+            "confidence": 0.528,
+            "spread_line": "UGA -3.0",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.675,
+            "total_line": 235,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.028249",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769071",
+        "home_team": "Texas Tech Red Raiders",
+        "away_team": "Oregon Ducks",
+        "home_abbrev": "TTU",
+        "away_abbrev": "ORE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Oregon Ducks",
+            "pick_home": false,
+            "confidence": 0.526,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ORE +5.9",
+            "pick_home": false,
+            "confidence": 0.511,
+            "spread_line": "TTU -5.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.674,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.028249",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401831583",
+        "home_team": "SMU Mustangs",
+        "away_team": "Arizona Wildcats",
+        "home_abbrev": "SMU",
+        "away_abbrev": "ARIZ",
+        "predictions": {
+          "moneyline": {
+            "pick": "SMU Mustangs",
+            "pick_home": true,
+            "confidence": 0.516,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "SMU -8.3",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "SMU -8.3",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.669,
+            "total_line": 215,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.028249",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778332",
+        "home_team": "Texas State Bobcats",
+        "away_team": "Rice Owls",
+        "home_abbrev": "TXST",
+        "away_abbrev": "RICE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Texas State Bobcats",
+            "pick_home": true,
+            "confidence": 0.63,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "TXST -3.7",
+            "pick_home": true,
+            "confidence": 0.557,
+            "spread_line": "TXST -3.7",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.697,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.028761",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778333",
+        "home_team": "Cincinnati Bearcats",
+        "away_team": "Navy Midshipmen",
+        "home_abbrev": "CIN",
+        "away_abbrev": "NAVY",
+        "predictions": {
+          "moneyline": {
+            "pick": "Cincinnati Bearcats",
+            "pick_home": true,
+            "confidence": 0.662,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "CIN -6.3",
+            "pick_home": true,
+            "confidence": 0.572,
+            "spread_line": "CIN -6.3",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.634,
+            "total_line": 245,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.028761",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401778334",
+        "home_team": "Mississippi State Bulldogs",
+        "away_team": "Wake Forest Demon Deacons",
+        "home_abbrev": "MSST",
+        "away_abbrev": "WAKE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Mississippi State Bulldogs",
+            "pick_home": true,
+            "confidence": 0.528,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MSST -2.9",
+            "pick_home": true,
+            "confidence": 0.512,
+            "spread_line": "MSST -2.9",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.553,
+            "total_line": 235,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.029290",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401833680",
+        "home_team": "Montana State Bobcats",
+        "away_team": "Illinois State Redbirds",
+        "home_abbrev": "MTST",
+        "away_abbrev": "ILST",
+        "predictions": {
+          "moneyline": {
+            "pick": "Montana State Bobcats",
+            "pick_home": true,
+            "confidence": 0.51,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MTST -3.5",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "MTST -3.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 240",
+            "pick_over": true,
+            "confidence": 0.639,
+            "total_line": 240,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.029290",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769075",
+        "home_team": "Ole Miss Rebels",
+        "away_team": "Miami Hurricanes",
+        "home_abbrev": "MISS",
+        "away_abbrev": "MIA",
+        "predictions": {
+          "moneyline": {
+            "pick": "Ole Miss Rebels",
+            "pick_home": true,
+            "confidence": 0.764,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "MISS -3.5",
+            "pick_home": true,
+            "confidence": 0.626,
+            "spread_line": "MISS -3.5",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.592,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.029803",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401769074",
+        "home_team": "Indiana Hoosiers",
+        "away_team": "Oregon Ducks",
+        "home_abbrev": "IU",
+        "away_abbrev": "ORE",
+        "predictions": {
+          "moneyline": {
+            "pick": "Oregon Ducks",
+            "pick_home": false,
+            "confidence": 0.597,
+            "model_accuracy": 0.64
+          },
+          "spread": {
+            "pick": "ORE +4.1",
+            "pick_home": false,
+            "confidence": 0.542,
+            "spread_line": "IU -4.1",
+            "model_accuracy": 0.68
+          },
+          "total": {
+            "pick": "OVER 225",
+            "pick_over": true,
+            "confidence": 0.58,
+            "total_line": 225,
+            "model_accuracy": 0.58
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "ncaa_football",
+        "generated_at": "2026-01-19T15:37:49.029803",
+        "status": "STATUS_FINAL"
+      }
+    ],
+    "nhl": [
+      {
+        "game_id": "401803121",
+        "home_team": "Carolina Hurricanes",
+        "away_team": "Buffalo Sabres",
+        "home_abbrev": "CAR",
+        "away_abbrev": "BUF",
+        "predictions": {
+          "moneyline": {
+            "pick": "Carolina Hurricanes",
+            "pick_home": true,
+            "confidence": 0.85,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "CAR -7.8",
+            "pick_home": true,
+            "confidence": 0.708,
+            "spread_line": "CAR -7.8",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 230",
+            "pick_over": true,
+            "confidence": 0.547,
+            "total_line": 230,
             "model_accuracy": 0.601
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2026-01-18T17:43:54.218973",
+        "generated_at": "2026-01-19T15:37:49.398865",
+        "status": "STATUS_FINAL"
+      },
+      {
+        "game_id": "401803122",
+        "home_team": "Colorado Avalanche",
+        "away_team": "Washington Capitals",
+        "home_abbrev": "COL",
+        "away_abbrev": "WSH",
+        "predictions": {
+          "moneyline": {
+            "pick": "Washington Capitals",
+            "pick_home": false,
+            "confidence": 0.534,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "WSH +2.6",
+            "pick_home": false,
+            "confidence": 0.513,
+            "spread_line": "COL -2.6",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 245",
+            "pick_over": true,
+            "confidence": 0.581,
+            "total_line": 245,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.399370",
         "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401803123",
+        "home_team": "Seattle Kraken",
+        "away_team": "Pittsburgh Penguins",
+        "home_abbrev": "SEA",
+        "away_abbrev": "PIT",
+        "predictions": {
+          "moneyline": {
+            "pick": "Pittsburgh Penguins",
+            "pick_home": false,
+            "confidence": 0.646,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "PIT +5.7",
+            "pick_home": false,
+            "confidence": 0.556,
+            "spread_line": "SEA -5.7",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 215",
+            "pick_over": true,
+            "confidence": 0.561,
+            "total_line": 215,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.399884",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401803124",
+        "home_team": "Florida Panthers",
+        "away_team": "San Jose Sharks",
+        "home_abbrev": "FLA",
+        "away_abbrev": "SJ",
+        "predictions": {
+          "moneyline": {
+            "pick": "San Jose Sharks",
+            "pick_home": false,
+            "confidence": 0.513,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "SJ +7.1",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "FLA -7.1",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "UNDER 205",
+            "pick_over": false,
+            "confidence": 0.583,
+            "total_line": 205,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.399884",
+        "status": "STATUS_IN_PROGRESS"
+      },
+      {
+        "game_id": "401803125",
+        "home_team": "Toronto Maple Leafs",
+        "away_team": "Minnesota Wild",
+        "home_abbrev": "TOR",
+        "away_abbrev": "MIN",
+        "predictions": {
+          "moneyline": {
+            "pick": "Toronto Maple Leafs",
+            "pick_home": true,
+            "confidence": 0.626,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "TOR -2.7",
+            "pick_home": true,
+            "confidence": 0.548,
+            "spread_line": "TOR -110",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 5.5",
+            "pick_over": true,
+            "confidence": 0.595,
+            "total_line": 5.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.400412",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401803126",
+        "home_team": "Vegas Golden Knights",
+        "away_team": "Philadelphia Flyers",
+        "home_abbrev": "VGK",
+        "away_abbrev": "PHI",
+        "predictions": {
+          "moneyline": {
+            "pick": "Vegas Golden Knights",
+            "pick_home": true,
+            "confidence": 0.667,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "VGK -7.5",
+            "pick_home": true,
+            "confidence": 0.565,
+            "spread_line": "VGK -218",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 6.5",
+            "pick_over": true,
+            "confidence": 0.61,
+            "total_line": 6.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.400412",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401803127",
+        "home_team": "Chicago Blackhawks",
+        "away_team": "Winnipeg Jets",
+        "home_abbrev": "CHI",
+        "away_abbrev": "WPG",
+        "predictions": {
+          "moneyline": {
+            "pick": "Winnipeg Jets",
+            "pick_home": false,
+            "confidence": 0.813,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "WPG +4.0",
+            "pick_home": false,
+            "confidence": 0.633,
+            "spread_line": "WPG -135",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 5.5",
+            "pick_over": true,
+            "confidence": 0.651,
+            "total_line": 5.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.400930",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401803128",
+        "home_team": "Calgary Flames",
+        "away_team": "New Jersey Devils",
+        "home_abbrev": "CGY",
+        "away_abbrev": "NJ",
+        "predictions": {
+          "moneyline": {
+            "pick": "Calgary Flames",
+            "pick_home": true,
+            "confidence": 0.512,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "CGY -4.4",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "NJ -115",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 5.5",
+            "pick_over": true,
+            "confidence": 0.67,
+            "total_line": 5.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.400930",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401803129",
+        "home_team": "Vancouver Canucks",
+        "away_team": "New York Islanders",
+        "home_abbrev": "VAN",
+        "away_abbrev": "NYI",
+        "predictions": {
+          "moneyline": {
+            "pick": "Vancouver Canucks",
+            "pick_home": true,
+            "confidence": 0.518,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "VAN -3.4",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "NYI -142",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 5.5",
+            "pick_over": true,
+            "confidence": 0.585,
+            "total_line": 5.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.401451",
+        "status": "STATUS_SCHEDULED"
+      },
+      {
+        "game_id": "401803130",
+        "home_team": "Anaheim Ducks",
+        "away_team": "New York Rangers",
+        "home_abbrev": "ANA",
+        "away_abbrev": "NYR",
+        "predictions": {
+          "moneyline": {
+            "pick": "Anaheim Ducks",
+            "pick_home": true,
+            "confidence": 0.621,
+            "model_accuracy": 0.72
+          },
+          "spread": {
+            "pick": "ANA -6.7",
+            "pick_home": true,
+            "confidence": 0.546,
+            "spread_line": "ANA -135",
+            "model_accuracy": 0.674
+          },
+          "total": {
+            "pick": "OVER 6.5",
+            "pick_over": true,
+            "confidence": 0.667,
+            "total_line": 6.5,
+            "model_accuracy": 0.601
+          }
+        },
+        "model_version": "v6_behavioral",
+        "sport": "nhl",
+        "generated_at": "2026-01-19T15:37:49.401451",
+        "status": "STATUS_SCHEDULED"
       }
     ],
     "mlb": [
@@ -448,27 +3917,27 @@
           "moneyline": {
             "pick": "Baltimore Orioles",
             "pick_home": true,
-            "confidence": 0.673,
+            "confidence": 0.511,
             "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "BAL -5.7",
+            "pick": "BAL -4.8",
             "pick_home": true,
-            "confidence": 0.578,
-            "spread_line": "BAL -5.7",
+            "confidence": 0.51,
+            "spread_line": "BAL -4.8",
             "model_accuracy": 0.62
           },
           "total": {
             "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.623,
+            "confidence": 0.615,
             "total_line": 235,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2026-01-18T17:43:54.732144",
+        "generated_at": "2026-01-19T15:37:49.802893",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -481,27 +3950,27 @@
           "moneyline": {
             "pick": "Chicago Cubs",
             "pick_home": true,
-            "confidence": 0.547,
+            "confidence": 0.748,
             "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "CHC -8.3",
+            "pick": "CHC -6.1",
             "pick_home": true,
-            "confidence": 0.52,
-            "spread_line": "CHC -8.3",
+            "confidence": 0.619,
+            "spread_line": "CHC -6.1",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 215",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.676,
-            "total_line": 215,
+            "confidence": 0.709,
+            "total_line": 235,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2026-01-18T17:43:54.732671",
+        "generated_at": "2026-01-19T15:37:49.804094",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -514,27 +3983,27 @@
           "moneyline": {
             "pick": "Texas Rangers",
             "pick_home": true,
-            "confidence": 0.721,
+            "confidence": 0.533,
             "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "TEX -6.8",
+            "pick": "TEX -3.1",
             "pick_home": true,
-            "confidence": 0.603,
-            "spread_line": "TEX -6.8",
+            "confidence": 0.514,
+            "spread_line": "TEX -3.1",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 235",
+            "pick": "OVER 245",
             "pick_over": true,
-            "confidence": 0.64,
-            "total_line": 235,
+            "confidence": 0.674,
+            "total_line": 245,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2026-01-18T17:43:54.732671",
+        "generated_at": "2026-01-19T15:37:49.804621",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -545,29 +4014,29 @@
         "away_abbrev": "ARI",
         "predictions": {
           "moneyline": {
-            "pick": "Arizona Diamondbacks",
-            "pick_home": false,
-            "confidence": 0.6,
+            "pick": "Colorado Rockies",
+            "pick_home": true,
+            "confidence": 0.61,
             "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "ARI +7.7",
-            "pick_home": false,
-            "confidence": 0.543,
-            "spread_line": "COL -7.7",
+            "pick": "COL -7.5",
+            "pick_home": true,
+            "confidence": 0.548,
+            "spread_line": "COL -7.5",
             "model_accuracy": 0.62
           },
           "total": {
             "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.592,
+            "confidence": 0.659,
             "total_line": 230,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2026-01-18T17:43:54.733188",
+        "generated_at": "2026-01-19T15:37:49.805149",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -580,95 +4049,62 @@
           "moneyline": {
             "pick": "Seattle Mariners",
             "pick_home": true,
-            "confidence": 0.523,
+            "confidence": 0.584,
             "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "SEA -3.5",
+            "pick": "SEA -8.0",
             "pick_home": true,
-            "confidence": 0.51,
-            "spread_line": "SEA -3.5",
+            "confidence": 0.536,
+            "spread_line": "SEA -8.0",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 220",
+            "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.705,
-            "total_line": 220,
+            "confidence": 0.688,
+            "total_line": 225,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2026-01-18T17:43:54.733188",
+        "generated_at": "2026-01-19T15:37:49.805149",
         "status": "STATUS_SCHEDULED"
       }
     ],
     "soccer": [
       {
-        "game_id": "740815",
-        "home_team": "Wolverhampton Wanderers",
-        "away_team": "Newcastle United",
-        "home_abbrev": "WOL",
-        "away_abbrev": "NEW",
+        "game_id": "740807",
+        "home_team": "Brighton & Hove Albion",
+        "away_team": "AFC Bournemouth",
+        "home_abbrev": "BHA",
+        "away_abbrev": "BOU",
         "predictions": {
           "moneyline": {
-            "pick": "Newcastle United",
+            "pick": "AFC Bournemouth",
             "pick_home": false,
-            "confidence": 0.51,
+            "confidence": 0.644,
             "model_accuracy": 0.67
           },
           "spread": {
-            "pick": "NEW +5.7",
+            "pick": "BOU +5.3",
             "pick_home": false,
-            "confidence": 0.51,
-            "spread_line": "WOL -5.7",
-            "model_accuracy": 0.753
-          },
-          "total": {
-            "pick": "OVER 245",
-            "pick_over": true,
-            "confidence": 0.691,
-            "total_line": 245,
-            "model_accuracy": 0.615
-          }
-        },
-        "model_version": "v6_behavioral",
-        "sport": "soccer",
-        "generated_at": "2026-01-18T17:43:55.345966",
-        "status": "STATUS_FULL_TIME"
-      },
-      {
-        "game_id": "740806",
-        "home_team": "Aston Villa",
-        "away_team": "Everton",
-        "home_abbrev": "AVL",
-        "away_abbrev": "EVE",
-        "predictions": {
-          "moneyline": {
-            "pick": "Aston Villa",
-            "pick_home": true,
-            "confidence": 0.662,
-            "model_accuracy": 0.67
-          },
-          "spread": {
-            "pick": "AVL -2.7",
-            "pick_home": true,
-            "confidence": 0.575,
-            "spread_line": "AVL -2.7",
+            "confidence": 0.567,
+            "spread_line": "BHA -5.3",
             "model_accuracy": 0.753
           },
           "total": {
             "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.63,
+            "confidence": 0.584,
             "total_line": 230,
             "model_accuracy": 0.615
           }
         },
         "model_version": "v6_behavioral",
         "sport": "soccer",
-        "generated_at": "2026-01-18T17:43:55.345966",
+        "generated_at": "2026-01-19T15:37:50.447666",
         "status": "STATUS_FULL_TIME"
       }
     ]
@@ -679,10 +4115,20 @@
       "spread": 0.734,
       "total": 0.622
     },
+    "ncaa_basketball": {
+      "moneyline": 0.65,
+      "spread": 0.71,
+      "total": 0.61
+    },
     "nfl": {
       "moneyline": 0.651,
       "spread": 0.69,
       "total": 0.563
+    },
+    "ncaa_football": {
+      "moneyline": 0.64,
+      "spread": 0.68,
+      "total": 0.58
     },
     "nhl": {
       "moneyline": 0.72,

@@ -26,7 +26,9 @@ OUTPUT_DIR = BASE_DIR / "data"
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports"
 ENDPOINTS = {
     'nba': '/basketball/nba/scoreboard',
+    'ncaa_basketball': '/basketball/mens-college-basketball/scoreboard',
     'nfl': '/football/nfl/scoreboard',
+    'ncaa_football': '/football/college-football/scoreboard',
     'nhl': '/hockey/nhl/scoreboard',
     'mlb': '/baseball/mlb/scoreboard',
     'soccer': '/soccer/eng.1/scoreboard',
@@ -36,7 +38,9 @@ ENDPOINTS = {
 # Includes V6 specialized + V7 advanced models that beat baselines
 MODEL_ACCURACY = {
     'nba': {'moneyline': 0.654, 'spread': 0.734, 'total': 0.622},  # V6 best
+    'ncaa_basketball': {'moneyline': 0.650, 'spread': 0.710, 'total': 0.610},  # NCAA Basketball
     'nfl': {'moneyline': 0.651, 'spread': 0.690, 'total': 0.563},  # V6 spread specialized
+    'ncaa_football': {'moneyline': 0.640, 'spread': 0.680, 'total': 0.580},  # College Football
     'nhl': {'moneyline': 0.720, 'spread': 0.674, 'total': 0.601},  # V7 spread 67.4%
     'mlb': {'moneyline': 0.581, 'spread': 0.620, 'total': 0.584},  # V7 ML 58.1%
     'soccer': {'moneyline': 0.670, 'spread': 0.753, 'total': 0.615},  # V6 ML specialized
