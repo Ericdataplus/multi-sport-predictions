@@ -10,14 +10,11 @@ const GameCard = memo(function GameCard({ game, prediction, onTrack }: GameCardP
     const homeWins = status.isFinal && homeTeam.score > awayTeam.score;
     const awayWins = status.isFinal && awayTeam.score > homeTeam.score;
 
-    // Get prediction display
-    const predTeam = prediction?.pick || homeTeam.abbreviation;
-    const predConfidence = prediction?.confidence || 0.6;
-    const isRealPrediction = !!prediction;
+
 
     const handleTrack = () => {
-        if (!status.isFinal) {
-            onTrack(game.id, predTeam, predConfidence);
+        if (!status.isFinal && prediction) {
+            onTrack(game.id, prediction.pick, prediction.confidence);
         }
     };
 
@@ -94,24 +91,30 @@ const GameCard = memo(function GameCard({ game, prediction, onTrack }: GameCardP
             </div>
 
             {/* Prediction */}
-            {!status.isFinal ? (
-                <div className="game-prediction" onClick={handleTrack}>
-                    <span>
-                        {isRealPrediction ? '🤖' : '🎯'} AI Pick: <strong>{predTeam}</strong>
-                        {isRealPrediction && <span className="model-badge">V6 MODEL</span>}
-                    </span>
-                    <span className="prediction-badge">{(predConfidence * 100).toFixed(0)}%</span>
-                    <span className="track-icon">📌</span>
-                </div>
+            {prediction ? (
+                !status.isFinal ? (
+                    <div className="game-prediction" onClick={handleTrack}>
+                        <span>
+                            🤖 AI Pick: <strong>{prediction.pick}</strong>
+                            <span className="model-badge">V6 MODEL</span>
+                        </span>
+                        <span className="prediction-badge">{(prediction.confidence * 100).toFixed(0)}%</span>
+                        <span className="track-icon">📌</span>
+                    </div>
+                ) : (
+                    <div className={`game-prediction result ${prediction.pick_home === homeWins ? 'won' : 'lost'}`}>
+                        <span>
+                            {prediction.pick_home === homeWins ? '✅' : '❌'}
+                            Picked <strong>{prediction.pick}</strong> ({(prediction.confidence * 100).toFixed(0)}%)
+                        </span>
+                        <span className="result-text">
+                            {prediction.pick_home === homeWins ? 'WON' : 'LOST'}
+                        </span>
+                    </div>
+                )
             ) : (
-                <div className={`game-prediction result ${prediction?.pick_home === homeWins ? 'won' : 'lost'}`}>
-                    <span>
-                        {prediction?.pick_home === homeWins ? '✅' : '❌'}
-                        Picked <strong>{predTeam}</strong> ({(predConfidence * 100).toFixed(0)}%)
-                    </span>
-                    <span className="result-text">
-                        {prediction?.pick_home === homeWins ? 'WON' : 'LOST'}
-                    </span>
+                <div className="game-prediction empty">
+                    <span style={{ opacity: 0.5 }}>No Model Prediction</span>
                 </div>
             )}
         </div>

@@ -119,7 +119,9 @@ def generate_prediction_for_game(game, sport, model=None):
     game_id = game.get('id', '')
     
     # Get ESPN odds if available
-    odds_data = comp.get('odds', [{}])[0] if comp.get('odds') else {}
+    odds_list = comp.get('odds', [])
+    odds_data = odds_list[0] if odds_list else {}
+    if odds_data is None: odds_data = {} # Safety
     espn_spread = odds_data.get('details', '')
     espn_total = odds_data.get('overUnder', 0)
     

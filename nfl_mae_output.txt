@@ -1,0 +1,17 @@
+passing_yards - MAE: 9.60, Acc: 5.3%
+rushing_yards - MAE: 8.69, Acc: 24.8%
+receiving_yards - MAE: 17.93, Acc: 48.1%
+receptions - MAE: 1.28, Acc: 40.6%
+passing_yards - MAE: 9.60, Acc: 5.3%
+passing_yards - MAE: 59.71, Acc: 29.4%
+rushing_yards - MAE: 19.81, Acc: 49.0%
+receiving_yards - MAE: 21.17, Acc: 48.2%
+receptions - MAE: 1.50, Acc: 46.7%
+passing_yards - MAE: 62.43, Acc: 23.5%
+rushing_yards - MAE: 19.84, Acc: 49.0%
+receiving_yards - MAE: 20.87, Acc: 51.8%
+receptions - MAE: 1.51, Acc: 46.7%
+passing_yards - MAE: 56.84, Acc: 35.3%
+rushing_yards - MAE: 18.71, Acc: 58.8%
+receiving_yards - MAE: 19.86, Acc: 63.4%
+receptions - MAE: 1.42, Acc: 62.9%
